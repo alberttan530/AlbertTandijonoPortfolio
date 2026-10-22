@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Albert Tandijono | Portfolio</title>
+<meta name="description" content="Albert Tandijono, 3rd year Information Systems student at BINUS University. Business analysis, systems analysis, data analysis and business intelligence projects.">
+<meta name="theme-color" content="#0D1B3D">
+<meta property="og:title" content="Albert Tandijono | Portfolio">
+<meta property="og:description" content="Information Systems student at BINUS University, specializing in Business Intelligence.">
+<meta property="og:type" content="website">
+<!-- TODO: add og:image and og:url once the site is deployed. -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%230D1B3D'/%3E%3Ctext x='32' y='42' font-family='Arial Black,sans-serif' font-size='26' text-anchor='middle' fill='%23FFD972'%3EAT%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=Caveat:wght@600;700&family=JetBrains+Mono:wght@500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script>
+  document.documentElement.classList.add('js');
+  setTimeout(function () { if (!window.__ready) document.documentElement.classList.remove('js'); }, 4000);
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="nav" id="top">
+  <div class="nav__in">
+    <a class="nav__brand" href="#top" aria-label="Albert Tandijono, back to top"><span class="nav__logo" aria-hidden="true">AT</span><span>Albert Tandijono</span></a>
+    <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-links"><iconify-icon icon="tabler:menu-2" aria-hidden="true"></iconify-icon><span>Menu</span></button>
+    <nav class="nav__links" id="nav-links" aria-label="Primary">
+      <a href="#about" data-nav="about">About</a>
+      <a href="#skills" data-nav="skills">Skills</a>
+      <a href="#experience" data-nav="experience">Experience</a>
+      <a href="#projects" data-nav="projects">Projects</a>
+      <a href="#certificates" data-nav="certificates">Certificates</a>
+      <a href="#contact" data-nav="contact" class="nav__cta">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ================= HERO (sky) ================= -->
+<section class="hero sky" aria-labelledby="hero-title">
+  <canvas class="hero__3d" id="hero-3d" aria-hidden="true"></canvas>
+  <div class="clouds" aria-hidden="true"><span class="cloud cl1"></span><span class="cloud cl2"></span><span class="cloud cl3"></span></div>
+  <div class="wrap hero__grid">
+    <div class="hero__text">
+      <p class="hand hero__hi">hello there, I'm</p>
+      <h1 class="hero__title" id="hero-title"><span class="line">Albert</span><span class="line">Tandijono<span class="hero__dot">.</span></span></h1>
+      <p class="hero__lines">3rd Year Information Systems student <b>@BINUS University</b>, passionate in Systems &amp; Business Analysis, specializing in <mark>Business Intelligence</mark>.</p>
+      <div class="hero__cta">
+        <a class="btn btn--primary magnetic" href="#projects">View projects <iconify-icon icon="tabler:arrow-down-right" aria-hidden="true"></iconify-icon></a>
+        <a class="btn btn--light magnetic" href="CV_Albert_Tandijono.pdf" download>Download CV <iconify-icon icon="tabler:download" aria-hidden="true"></iconify-icon></a>
+      </div>
+    </div>
+    <div class="hero__media">
+      <div class="hero__blob"><img src="portrait-nobg.webp" width="404" height="617" alt="Albert Tandijono in a black blazer and white shirt" fetchpriority="high"></div>
+      <span class="sticker st-gpa" aria-hidden="true"><b>4.00</b>GPA</span>
+      <span class="sticker st-top" aria-hidden="true"><iconify-icon icon="tabler:chart-dots-3"></iconify-icon>Data Analytics Enthusiast</span>
+      <span class="sticker st-bi" aria-hidden="true"><iconify-icon icon="tabler:briefcase"></iconify-icon>Aspiring Business Analyst</span>
+      <span class="hand scribble" aria-hidden="true">that's me!<iconify-icon icon="tabler:arrow-curve-right"></iconify-icon></span>
+    </div>
+  </div>
+</section>
+
+<!-- Marquee band -->
+<div class="band" aria-hidden="true">
+  <div class="band__track">
+    <span>SQL</span><i>✦</i><span>Tableau</span><i>✦</i><span>Power BI</span><i>✦</i><span>Python</span><i>✦</i><span>Oracle APEX</span><i>✦</i><span>Figma</span><i>✦</i><span>Excel &amp; DAX</span><i>✦</i><span>UML &amp; DFD</span><i>✦</i><span>Business Analysis</span><i>✦</i>
+    <span>SQL</span><i>✦</i><span>Tableau</span><i>✦</i><span>Power BI</span><i>✦</i><span>Python</span><i>✦</i><span>Oracle APEX</span><i>✦</i><span>Figma</span><i>✦</i><span>Excel &amp; DAX</span><i>✦</i><span>UML &amp; DFD</span><i>✦</i><span>Business Analysis</span><i>✦</i>
+  </div>
+</div>
+
+<!-- ================= ABOUT (paper) ================= -->
+<section class="section paper" id="about" data-nav="about" aria-labelledby="about-h">
+  <iconify-icon class="doodle d-pencil" icon="tabler:pencil" data-speed="-60" aria-hidden="true"></iconify-icon>
+  <iconify-icon class="doodle d-star" icon="tabler:star-filled" data-speed="40" aria-hidden="true"></iconify-icon>
+  <div class="wrap">
+    <h2 class="title split" id="about-h">Hello, I’m <span class="hl hl--butter">Albert!</span></h2>
+    <div class="about__grid">
+      <div class="about__text reveal">
+        <p>I’m a third-year Information Systems student at BINUS University in Jakarta, and I’ve kept a 4.00 GPA through my first four semesters. I enjoy the space where business, data, and technology meet. I like figuring out how a process really works, modeling the data behind it, and turning it into dashboards and systems that help leaders make better decisions. Day to day, I work with SQL, Oracle APEX, Excel, Word, Tableau, Power BI, Python, and Figma.</p>
+        <p>Outside of class, I teach as a part-time Information Systems Laboratory Assistant, mentor fellow students as a Scholarship Mentor, and lead the Strategic Support team in Business Development at AIESEC in BINUS. Right now I’m building toward a career as a Business, Systems, and Data Analyst, with a focus on Business Intelligence.</p>
+      </div>
+      <figure class="polaroid reveal" style="--rot:3deg">
+        <img src="about-portrait.webp" width="670" height="1024" loading="lazy" decoding="async" alt="Albert in a maroon BINUS University jacket">
+      </figure>
+    </div>
+    <dl class="notes" aria-label="Highlights">
+      <div class="note n-butter reveal" style="--rot:-3deg"><dt>GPA</dt><dd><span class="count" data-count="4" data-decimals="2">4.00</span></dd></div>
+      <div class="note n-mint reveal" style="--rot:2deg"><dt>SIS Excellence Awards 2026</dt><dd><span class="count" data-count="5" data-prefix="Top " data-suffix="%">Top 5%</span></dd></div>
+      <div class="note n-peach reveal" style="--rot:-1.5deg"><dt>Dean’s List</dt><dd>2025</dd></div>
+      <div class="note n-lilac reveal" style="--rot:3deg"><dt>IELTS</dt><dd><span class="count" data-count="8" data-decimals="1">8.0</span></dd></div>
+    </dl>
+  </div>
+</section>
+
+<!-- ================= EDUCATION (navy) ================= -->
+<section class="section navy" id="education" data-nav="about" aria-labelledby="edu-h">
+  <iconify-icon class="doodle d-cap" icon="tabler:school" data-speed="-50" aria-hidden="true"></iconify-icon>
+  <div class="wrap">
+    <h2 class="title split" id="edu-h">Education</h2>
+    <div class="edu">
+      <figure class="arch reveal">
+        <img src="binus-alsut.webp" width="1100" height="733" loading="lazy" decoding="async" alt="BINUS University Alam Sutera campus tower with green facades">
+        <figcaption>BINUS @Alam Sutera</figcaption>
+        <!-- Photo: Gandy Peejay, CC BY-SA 4.0, https://commons.wikimedia.org/wiki/File:Alam_Sutera_Campus.jpg -->
+      </figure>
+      <div class="edu__body reveal">
+        <p class="chip chip--butter">2024 to 2028 (expected)</p>
+        <h3 class="h3">BINUS University</h3>
+        <p class="edu__deg">Bachelor of Computer Science (S.Kom), Information Systems, School of Information Systems</p>
+        <p class="edu__now">Currently Semester 5 (3rd year), Business Intelligence stream</p>
+        <div class="edu__gpa"><span class="count big" data-count="4" data-decimals="2">4.00</span><span>/ 4.00 GPA<br>across 4 semesters (80 credits)</span></div>
+        <p class="label">Relevant coursework</p>
+        <ul class="tags tags--rainbow" aria-label="Relevant coursework">
+          <li>Database Programming with PL/SQL</li>
+          <li>Data Modelling &amp; Visualization</li>
+          <li>Cloud Database</li>
+          <li>Enterprise Data Warehouse &amp; Big Data Architecture</li>
+          <li>Information Systems Analysis &amp; Design</li>
+          <li>Enterprise Business Process</li>
+          <li>IS Project Management</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SKILLS (sky) ================= -->
+<section class="section sky sky--soft" id="skills" data-nav="skills" aria-labelledby="skills-h">
+  <iconify-icon class="doodle d-db" icon="tabler:database" data-speed="-70" aria-hidden="true"></iconify-icon>
+  <iconify-icon class="doodle d-chart" icon="tabler:chart-bar" data-speed="50" aria-hidden="true"></iconify-icon>
+  <div class="deco deco-sql" data-speed="-40" aria-hidden="true"><span class="k">SELECT</span> skill<br><span class="k">FROM</span> albert<br><span class="k">ORDER BY</span> impact <span class="k">DESC</span>;</div>
+  <div class="deco deco-bars" data-speed="60" aria-hidden="true"><i style="--h:40%"></i><i style="--h:70%"></i><i style="--h:55%"></i><i style="--h:92%"></i></div>
+  <div class="deco deco-pie" data-speed="-30" aria-hidden="true"></div>
+  <div class="deco deco-note" data-speed="45" aria-hidden="true">KPI up,<br>insight found!</div>
+  <iconify-icon class="doodle d-schema" icon="tabler:schema" data-speed="35" aria-hidden="true"></iconify-icon>
+  <iconify-icon class="doodle d-cap2" icon="tabler:school" data-speed="-55" aria-hidden="true"></iconify-icon>
+  <div class="wrap">
+    <h2 class="title split" id="skills-h">What I bring to the <span class="hl hl--mint">table</span></h2>
+
+    <h3 class="sub reveal"><iconify-icon icon="tabler:tools" aria-hidden="true"></iconify-icon> Hard skills</h3>
+    <ul class="hard">
+      <li class="hard__card c-sky reveal"><iconify-icon icon="tabler:chart-histogram" aria-hidden="true"></iconify-icon><h4>Data Analysis &amp; Visualization</h4><p>Building KPI dashboards, exploratory data analysis, and data storytelling with Tableau, Power BI, and Excel.</p></li>
+      <li class="hard__card c-mint reveal"><iconify-icon icon="tabler:database" aria-hidden="true"></iconify-icon><h4>Data Modeling &amp; Databases</h4><p>Designing ERDs and star schemas, writing DAX measures, and building databases with SQL, PL/SQL, and Oracle APEX.</p></li>
+      <li class="hard__card c-butter reveal"><iconify-icon icon="tabler:sitemap" aria-hidden="true"></iconify-icon><h4>Systems Analysis &amp; Design</h4><p>Analyzing systems using use case, sequence, activity, and class diagrams, DFDs, and fishbone analysis to turn business needs into system requirements.</p></li>
+      <li class="hard__card c-peach reveal"><iconify-icon icon="tabler:briefcase" aria-hidden="true"></iconify-icon><h4>Business Analysis</h4><p>Analyzing business needs using issue trees, root cause analysis, SWOT/TOWS, user interviews and surveys, and financial projections.</p></li>
+      <li class="hard__card c-lilac reveal"><iconify-icon icon="tabler:brand-figma" aria-hidden="true"></iconify-icon><h4>UI/UX Design &amp; Prototyping</h4><p>Building user personas, user journey maps, task flows, and wireframes to build high-fidelity prototypes such as mobile applications and websites using Figma.</p></li>
+      <li class="hard__card c-sky reveal"><iconify-icon icon="tabler:code" aria-hidden="true"></iconify-icon><h4>SQL Query &amp; Programming</h4><p>Using Python for data cleaning and analysis, and SQL for querying and database programming using MySQL and Oracle APEX.</p></li>
+    </ul>
+
+    <div class="skills2">
+      <div class="soft reveal">
+        <h3 class="sub"><iconify-icon icon="tabler:heart-handshake" aria-hidden="true"></iconify-icon> Soft skills</h3>
+        <dl>
+          <div><dt>Communication</dt><dd>Explaining complex ideas simply to any audience, from teaching ~200 students to pitching to competition judges.</dd></div>
+          <div><dt>Leadership</dt><dd>Setting clear direction and keeping teams motivated, as Team Leader at AIESEC in BINUS.</dd></div>
+          <div><dt>Business Problem Solving &amp; Consulting</dt><dd>Turning root causes into data-backed solutions throughout my business case competition journey.</dd></div>
+          <div><dt>Collaboration &amp; Mentoring</dt><dd>Working across teams and helping others grow, through HIMSISFO, AIESEC, and scholarship mentoring.</dd></div>
+        </dl>
+        <p class="label">Languages</p>
+        <ul class="langs">
+          <li><b>Indonesian</b> Native</li>
+          <li><b>English</b> IELTS 8.0, Full Professional</li>
+          <li><b>Mandarin</b> HSK 2</li>
+          <li><b>Japanese</b> JLPT N4</li>
+        </ul>
+      </div>
+      <div class="tools reveal">
+        <h3 class="sub"><iconify-icon icon="tabler:apps" aria-hidden="true"></iconify-icon> Software skills</h3>
+        <div class="tool"><h4>Data &amp; Business Intelligence</h4><ul class="stickers"><li style="--rot:-3deg"><iconify-icon icon="vscode-icons:file-type-excel" aria-hidden="true"></iconify-icon>MS Excel</li><li style="--rot:2deg"><iconify-icon icon="logos:tableau-icon" aria-hidden="true"></iconify-icon>Tableau</li><li style="--rot:-1deg"><iconify-icon icon="logos:microsoft-power-bi" aria-hidden="true"></iconify-icon>Power BI</li><li style="--rot:3deg"><iconify-icon icon="logos:python" aria-hidden="true"></iconify-icon>Python</li></ul><p>Excel, Tableau, and Power BI for data analytics and interactive dashboards. Python for data cleaning and preparation.</p></div>
+        <div class="tool"><h4>Database &amp; Query</h4><ul class="stickers"><li style="--rot:2deg"><iconify-icon icon="simple-icons:oracle" style="color:#C74634" aria-hidden="true"></iconify-icon>Oracle APEX</li><li style="--rot:-2deg"><iconify-icon icon="logos:mysql-icon" aria-hidden="true"></iconify-icon>MySQL</li><li style="--rot:1deg"><iconify-icon icon="tabler:schema" aria-hidden="true"></iconify-icon>Oracle Data Modeler</li><li style="--rot:-3deg"><iconify-icon icon="tabler:cloud" aria-hidden="true"></iconify-icon>Oracle Cloud Infrastructure</li></ul><p>Oracle APEX and MySQL for building and querying databases. Oracle Data Modeler and Oracle Cloud Infrastructure for database design.</p></div>
+        <div class="tool"><h4>Systems Analysis &amp; Design</h4><ul class="stickers"><li style="--rot:-2deg"><iconify-icon icon="simple-icons:diagramsdotnet" style="color:#F08705" aria-hidden="true"></iconify-icon>Draw.io</li><li style="--rot:2deg"><iconify-icon icon="logos:figma" aria-hidden="true"></iconify-icon>Figma</li></ul><p>Draw.io for UML diagrams and business process models. Figma for wireframes and high-fidelity prototypes.</p></div>
+        <div class="tool"><h4>Productivity &amp; Creativity</h4><ul class="stickers"><li style="--rot:1deg"><iconify-icon icon="logos:microsoft-icon" aria-hidden="true"></iconify-icon>Microsoft Office</li><li style="--rot:-2deg"><iconify-icon icon="devicon:canva" aria-hidden="true"></iconify-icon>Canva</li><li style="--rot:3deg"><iconify-icon icon="tabler:movie" aria-hidden="true"></iconify-icon>CapCut</li><li style="--rot:-1deg"><iconify-icon icon="tabler:photo-edit" aria-hidden="true"></iconify-icon>Lightroom</li></ul><p>Microsoft Office and Canva for reports, presentations, and visuals. CapCut and Lightroom for photo and video content.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= EXPERIENCE (navy) ================= -->
+<section class="section navy" id="experience" data-nav="experience" aria-labelledby="exp-h">
+  <div class="float-code" data-speed="-40" aria-hidden="true">JOIN mentees m<br>ON m.goal = 'grow'</div>
+  <div class="wrap">
+    <h2 class="title split" id="exp-h">Experience</h2>
+    <ol class="timeline">
+      <span class="timeline__line" aria-hidden="true"><span></span></span>
+
+      <li class="tl">
+        <span class="tl__dot" aria-hidden="true"><iconify-icon icon="tabler:flask"></iconify-icon></span>
+        <div class="tl__body reveal">
+          <p class="chip chip--mint">Jan 2026 to Present</p>
+          <h3 class="h3">Part-Time Laboratory Assistant</h3>
+          <p class="tl__org">School of Information Systems, BINUS University</p>
+          <ul class="bul">
+            <li>Teach 1st to 3rd semester students in UX Research &amp; Design (high-fidelity prototypes in Figma), Database Fundamentals (ERDs and database queries in Oracle APEX), and Information Systems Analysis &amp; Design (analyzing business problems and ideating system-based solutions in Draw.io).</li>
+            <li>Grade quizzes, assignments, and projects, and work with lecturers to support students.</li>
+            <li>Recognized as a Dedicated Assistant in Even Semester 2025/2026 while teaching Database Fundamentals across 2 classes with approximately 60 students.</li>
+          </ul>
+          <div class="fan">
+            <figure class="polaroid" style="--rot:-5deg"><img src="lab-bj11.webp" width="900" height="506" loading="lazy" decoding="async" alt="Database Fundamentals class BJ11 posing in the computer lab"><figcaption>Database Fundamentals Class 1</figcaption></figure>
+            <figure class="polaroid" style="--rot:2deg"><img src="lab-class.webp" width="900" height="659" loading="lazy" decoding="async" alt="A full classroom of students in a BINUS lecture room"><figcaption>Weekly Training</figcaption></figure>
+            <figure class="polaroid" style="--rot:6deg"><img src="lab-bl11.webp" width="900" height="506" loading="lazy" decoding="async" alt="Database Fundamentals class BL11 posing in the computer lab"><figcaption>Database Fundamentals Class 2</figcaption></figure>
+          </div>
+        </div>
+      </li>
+
+      <li class="tl">
+        <span class="tl__dot" aria-hidden="true"><iconify-icon icon="tabler:users-group"></iconify-icon></span>
+        <div class="tl__body reveal">
+          <p class="chip chip--butter">Jul 2025 to Present</p>
+          <h3 class="h3">Scholarship Mentor &amp; Tutor</h3>
+          <p class="tl__org">Student Advisory and Support Center (SASC), BINUS University</p>
+          <ul class="bul">
+            <li>Semester 3: Appointed as Scholarship Mentor, guiding 3 students to academic excellence and earning a Certificate of Excellent Achievement.</li>
+            <li>Semester 4: Appointed as Scholarship Tutor for Database Fundamentals, teaching around 200 second-semester students using Oracle APEX.</li>
+            <li>Semester 5: Reappointed as Scholarship Mentor, now guiding 5 fifth-semester students in Business Intelligence and Data Analytics with Excel, Tableau, Power BI, and Python.</li>
+          </ul>
+          <!-- TODO CONFIRM: Semester 4 tutor term (Even 2025/2026 vs the CV's 2026/2027). -->
+          <div class="film" aria-label="Mentoring and tutoring photos">
+            <div class="film__track">
+              <figure><img src="mentor-1.webp" width="900" height="506" loading="lazy" decoding="async" alt="Albert with a mentee after a data modeling session"><figcaption>Data and Information Management</figcaption></figure>
+              <figure><img src="mentor-2.webp" width="900" height="506" loading="lazy" decoding="async" alt="Albert and a mentee giving a thumbs up in a meeting room"><figcaption>Data and Information Management</figcaption></figure>
+              <figure><img src="mentor-3.webp" width="900" height="506" loading="lazy" decoding="async" alt="Mentoring session on Basic CSS with a slide on screen"><figcaption>Programming for Business</figcaption></figure>
+              <figure><img src="mentor-4.webp" width="900" height="506" loading="lazy" decoding="async" alt="Mentoring session titled Introduction to MySQL Basic Query"><figcaption>Database Fundamentals</figcaption></figure>
+              <figure><img src="tutoring-sql.webp" width="900" height="547" loading="lazy" decoding="async" alt="Tutoring slide showing a SQL query with multiple clauses and aggregate functions"><figcaption>Database Fundamentals (Tutoring)</figcaption></figure>
+              <figure><img src="mentor-5.webp" width="900" height="506" loading="lazy" decoding="async" alt="Mentoring session on object modeling"><figcaption>Information Systems Analysis and Design</figcaption></figure>
+              <figure><img src="mentor-6.webp" width="900" height="506" loading="lazy" decoding="async" alt="Mentoring session on data design with a laptop showing the slides"><figcaption>Information Systems Analysis and Design</figcaption></figure>
+            </div>
+          </div>
+          <p class="film__hint hand" aria-hidden="true">drag or scroll sideways <iconify-icon icon="tabler:arrow-narrow-right"></iconify-icon></p>
+        </div>
+      </li>
+
+    </ol>
+  </div>
+</section>
+
+<!-- ================= ORGANIZATIONS (paper) ================= -->
+<section class="section paper" id="organizations" data-nav="experience" aria-labelledby="org-h">
+  <iconify-icon class="doodle d-plane" icon="tabler:send" data-speed="-60" aria-hidden="true"></iconify-icon>
+  <div class="wrap">
+    <h2 class="title split" id="org-h">Organizations</h2>
+
+    <article class="org reveal">
+      <div class="org__text">
+        <p class="chip chip--sky">Feb 2026 to Feb 2027</p>
+        <h3 class="h3">AIESEC in BINUS</h3>
+        <p class="org__role">Team Leader, Strategic Support (Business Development)</p>
+        <p class="org__lede">Strategic Support is the sub-function of Business Development responsible for generating revenue and creating member benefits through partnerships.</p>
+        <ul class="bul">
+          <li>Lead and manage the Strategic Support team, setting targets and delegating tasks.</li>
+          <li>Generate revenue by creating and selling merchandise across the AIESEC in Indonesia network.</li>
+          <li>Build AIESEC Business Card (ABC) partnerships with local cafés, restaurants, and businesses that give members exclusive discounts to increase member satisfaction.</li>
+          <li>Create promotional content for ABC partners to boost usage among members.</li>
+        </ul>
+      </div>
+      <div class="org__media org__media--aiesec">
+        <figure class="blob"><img src="aiesec-team.webp" width="1200" height="656" loading="lazy" decoding="async" alt="AIESEC in BINUS members in matching blue jackets on the campus steps"><figcaption>AIESEC in BINUS family</figcaption></figure>
+        <figure class="window bd" style="--rot:-1.5deg"><span class="window__bar" aria-hidden="true"><i></i><i></i><i></i></span><img src="aiesec-bd-q1.webp" width="1189" height="645" loading="lazy" decoding="async" alt="Business Development condition for Quarter 1, February to April: Rp19.5 million financial support, Rp24 million in-kind support, Rp17.4 million merchandise profit, 345 market research, 17 sales meetings, 4 LoAs signed and 6 in process"><figcaption>BD Condition, Quarter 1</figcaption></figure>
+        <figure class="lanyard">
+          <span class="lanyard__strap" aria-hidden="true"></span>
+          <span class="lanyard__clip" aria-hidden="true"></span>
+          <div class="lanyard__card"><img src="aiesec-abc.webp" width="600" height="895" loading="lazy" decoding="async" alt="Albert's AIESEC Business Card as Team Leader of Strategic Support, with QR codes"></div>
+          <figcaption>My ABC card</figcaption>
+        </figure>
+        <figure class="sticker-img tl-poster" style="--rot:4deg"><img src="aiesec-ss.webp" width="700" height="864" loading="lazy" decoding="async" alt="Poster introducing Albert Tandijono as Team Leader of Strategic Support, AIESEC in BINUS"><figcaption>Team Leader of Strategic Support</figcaption></figure>
+        <div class="abc-duo" aria-label="ABC partner promotions">
+          <figure class="sticker-img" style="--rot:-4deg"><img src="abc-athens.webp" width="560" height="996" loading="lazy" decoding="async" alt="ABC partner promotion for Athens Cafe, 20% discount"><figcaption>ABC partner: Athens Cafe</figcaption></figure>
+          <figure class="sticker-img" style="--rot:4deg"><img src="abc-kinsuke.webp" width="560" height="996" loading="lazy" decoding="async" alt="ABC partner promotion for Kinsuke Ramen, 15% discount"><figcaption>ABC partner: Kinsuke Ramen</figcaption></figure>
+        </div>
+      </div>
+    </article>
+
+    <article class="org org--flip reveal">
+      <div class="org__text">
+        <p class="chip chip--peach">Jan 2025 to Jan 2026</p>
+        <h3 class="h3">HIMSISFO, BINUS University</h3>
+        <p class="org__role">Activist, Commission I (Education)</p>
+        <p class="org__lede">Helped run the association’s education programs and student events, taking a different coordinator role for each event.</p>
+        <ul class="bul">
+          <li><b>Equipment Coordinator, Birthday Party HIMSISFO 2025:</b> listed every item the event needed and kept procurement within budget.</li>
+          <li><b>Event Coordinator, Expo &amp; Welcoming Party 2025:</b> designed the event flow and concept to welcome new students, and kept all staff aligned toward shared goals.</li>
+          <li><b>Treasurer, Farewell Party &amp; Yearbook 2025:</b> managed the event budget and prepared meeting minutes, proposals, MoAs, and other event documents.</li>
+        </ul>
+        <!-- TODO CONFIRM: HIMSISFO dates (old slide said Jul 2024 to Jul 2025). -->
+      </div>
+      <div class="org__media org__media--duo">
+        <figure class="torn" style="--rot:-2deg"><img src="himsisfo-team.webp" width="900" height="484" loading="lazy" decoding="async" alt="HIMSISFO activists in maroon jackets posing together"><figcaption>HIMSISFO activists</figcaption></figure>
+        <figure class="window" style="--rot:2deg"><span class="window__bar" aria-hidden="true"><i></i><i></i><i></i></span><img src="himsisfo-meeting.webp" width="900" height="462" loading="lazy" decoding="async" alt="Online progress meeting for the Expo and Welcoming Party"><figcaption>Expo progress meeting</figcaption></figure>
+      </div>
+    </article>
+
+    <article class="org reveal">
+      <div class="org__text">
+        <p class="chip chip--lilac">Feb 2026 to Present</p>
+        <h3 class="h3">Information Systems Case Study Club (ISCSC)</h3>
+        <p class="org__role">Member</p>
+        <ul class="bul">
+          <li>Train regularly for business case, UI/UX, and data analytics competitions through case practice and coaching.</li>
+          <li>Brainstorm and analyze cases with fellow members to sharpen problem analysis and presentation skills.</li>
+          <li>Applied these skills in national competitions, such as reaching the top 10 of 90 teams at B-Startion 2026.</li>
+        </ul>
+        <!-- TODO CONFIRM: ISCSC start month. -->
+      </div>
+      <div class="org__media org__media--duo">
+        <figure class="polaroid" style="--rot:3deg"><img src="iscsc-team.webp" width="900" height="506" loading="lazy" decoding="async" alt="ISCSC members posing together"><figcaption>Weekly Training</figcaption></figure>
+        <figure class="polaroid" style="--rot:-4deg"><img src="iscsc-class.webp" width="900" height="506" loading="lazy" decoding="async" alt="ISCSC case practice session in a classroom"><figcaption>Member Gathering</figcaption></figure>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- ================= PROJECTS (navy, stacked cards) ================= -->
+<section class="section navy projects" id="projects" data-nav="projects" aria-labelledby="proj-h">
+  <div class="wrap">
+    <h2 class="title split" id="proj-h">Project <span class="hl hl--peach">Showcase</span></h2>
+    <p class="projects__lede reveal">Where business meets data. Hands-on work in business intelligence, data analytics, systems analysis, and business analysis, from the first problem statement to the final dashboard.</p>
+  </div>
+
+  <div class="filters wrap reveal" role="group" aria-label="Filter projects by role"><button type="button" class="chip is-on" data-filter="all">All projects</button><button type="button" class="chip" data-filter="ba">Business Analyst</button><button type="button" class="chip" data-filter="po">Product Owner</button><button type="button" class="chip" data-filter="da">Data Analyst</button><button type="button" class="chip" data-filter="ux">UI/UX</button></div>
+  <div class="stack wrap">
+<article class="card cx1 c1" data-roles="ba po" id="project-01" aria-labelledby="p1-t">
+      <div class="card__head">
+        <span class="card__n" aria-hidden="true">01</span>
+        <div><p class="card__cat">Business Analysis Project</p><h3 class="card__t" id="p1-t">PrintIN</h3></div>
+        <div class="card__actions"><button class="live live--solid magnetic" type="button" data-cs="cs-printin">Case details <iconify-icon icon="tabler:layout-sidebar-right-expand" aria-hidden="true"></iconify-icon></button><a class="live magnetic" href="https://drive.google.com/drive/folders/1uKI9qDQCMO22XROUpWVY8w6q1M9Z_9RJ?usp=sharing" target="_blank" rel="noopener" data-live>Find project <iconify-icon icon="tabler:arrow-up-right" aria-hidden="true"></iconify-icon></a></div>
+      </div>
+      <div class="card__body">
+        <div class="card__text">
+          <p class="card__sub">Digitalizing printing stores with a mobile app. Group project (4 members).</p>
+          <p class="role">My role: <span>Business Analyst</span></p>
+          <ul class="bul">
+            <li>I built PrintIN with my team, an app that lets customers find printing vendors, customize their prints, and order in one place, instead of store-hopping and waiting for quotes over chat.</li>
+            <li>We started with a fishbone diagram to find why ordering felt so slow, then used DFDs to see how data flows between customers, vendors, and admins.</li>
+            <li>Use case, class, sequence, activity, and state diagrams let us define what each user needs and test the ordering logic before designing any screen.</li>
+            <li>We built all the diagrams in Draw.io and designed the UI screens and admin reports in Figma.</li>
+          </ul>
+          <ul class="tags tags--pop"><li>Draw.io</li><li>Figma</li><li>UML</li></ul>
+        </div>
+        <div class="card__media phones">
+          <figure class="phone" style="--rot:-7deg"><div class="phone__screen"><img src="printin-home.webp" width="430" height="932" loading="lazy" decoding="async" alt="PrintIN Home screen with wallet, new products and service shortcuts"></div><figcaption>Home</figcaption></figure>
+          <figure class="phone phone--front"><div class="phone__screen"><img src="printin-nearme.webp" width="430" height="932" loading="lazy" decoding="async" alt="PrintIN Near Me screen listing nearby printing vendors"></div><figcaption>Vendors near me</figcaption></figure>
+          <figure class="phone" style="--rot:7deg"><div class="phone__screen"><img src="printin-custom.webp" width="430" height="932" loading="lazy" decoding="async" alt="PrintIN customization form for size, paper color, paper type and finishing"></div><figcaption>Customize print</figcaption></figure>
+        </div>
+      </div>
+    </article>
+
+    <article class="card cx2 flip" id="project-montirin" data-roles="ba po" aria-labelledby="p-montirin-t">
+      <div class="card__head">
+        <span class="card__n" aria-hidden="true">02</span>
+        <div><p class="card__cat">Business Analysis &amp; Product Project</p><h3 class="card__t" id="p-montirin-t">MontirIn</h3></div>
+        <div class="card__actions"><button class="live live--solid magnetic" type="button" data-cs="cs-montirin">Case details <iconify-icon icon="tabler:layout-sidebar-right-expand" aria-hidden="true"></iconify-icon></button><a class="live magnetic" href="https://drive.google.com/drive/folders/1FMXmaqcbDYXlOL9t93wYlNOraXYdudr1?usp=sharing" target="_blank" rel="noopener" data-live>Find project <iconify-icon icon="tabler:arrow-up-right" aria-hidden="true"></iconify-icon></a></div>
+      </div>
+      <div class="card__body">
+        <div class="card__text">
+          <p class="card__sub">Smart workshop management system for a garage that is almost 10 years old and still runs on paper. Group project (5 members), Minor Project in Information Systems.</p>
+          <p class="role">My role: <span>Business Analyst &amp; Product Owner</span></p>
+          <ul class="bul"><li>I analyzed how Mandiri Motor Garage really works: walk-in customers, verbal estimates, service history and cash records kept in paper books.</li><li>We grouped the pain points into 5 problem areas (manual records, payment uncertainty, inefficient operations, low price transparency, staff turnover) and matched each one to an opportunity.</li><li>The requirements cover 10 modules, 23 use cases, 5 user roles and 6 AI features, backed by a 17-entity data model.</li><li>The business case shows a Rp 458.6M investment with a 15.6% IRR, 60.5% 5-year ROI and 3.47-year payback.</li></ul>
+          <ul class="tags tags--pop"><li>Functional specification</li><li>Use cases</li><li>Process modeling</li><li>ERD</li><li>NPV / IRR</li></ul>
+        </div>
+        <div class="card__media phones"><figure class="phone" style="--rot:-7deg"><div class="phone__screen"><img src="montirin_beranda.webp" width="560" height="1216" loading="lazy" decoding="async" alt="MontirIn customer home with active service card, queue position and service shortcuts"></div><figcaption>Customer home</figcaption></figure><figure class="phone phone--front"><div class="phone__screen"><img src="montirin_estimasi.webp" width="560" height="1216" loading="lazy" decoding="async" alt="MontirIn estimate screen with inspection photo, cost breakdown and approve or reject buttons"></div><figcaption>Approve estimate</figcaption></figure><figure class="phone" style="--rot:7deg"><div class="phone__screen"><img src="montirin_saran_ai.webp" width="560" height="1216" loading="lazy" decoding="async" alt="MontirIn mechanic screen showing ranked AI diagnosis suggestions and component condition from photos"></div><figcaption>AI diagnosis</figcaption></figure></div>
+      </div>
+    </article>
+
+    <article class="card cx3" id="project-sigap" data-roles="ba po" aria-labelledby="p-sigap-t">
+      <div class="card__head">
+        <span class="card__n" aria-hidden="true">03</span>
+        <div><p class="card__cat">Business Analysis Project</p><h3 class="card__t" id="p-sigap-t">SIGAP: Voice-First Care Application for Elders</h3></div>
+        <div class="card__actions"><button class="live live--solid magnetic" type="button" data-cs="cs-sigap">Case details <iconify-icon icon="tabler:layout-sidebar-right-expand" aria-hidden="true"></iconify-icon></button><a class="live magnetic" href="https://drive.google.com/drive/folders/1WDjpWX28YDn9CYrEEpR72BHt9HG8v463?usp=sharing" target="_blank" rel="noopener" data-live>Find project <iconify-icon icon="tabler:arrow-up-right" aria-hidden="true"></iconify-icon></a></div>
+      </div>
+      <div class="card__body">
+        <div class="card__text">
+          <p class="card__sub">Mobile app and village dashboard that lets elders report problems and book care just by speaking to an AI assistant. Venture Creation project, team of 3.</p>
+          <p class="role">My role: <span>Business Analyst</span></p>
+          <ul class="bul"><li>I wrote the full business analysis pack: BRD, problem and user research, SRS with 32 use cases, system models and a requirements traceability set.</li><li>A family survey (34 respondents) showed the real barrier is an unclear service flow: 40% do not know who to contact, while only 10% struggle with apps. That shaped the voice-first solution.</li><li>I set 7 business objectives with measurable targets and split the scope into 3 MoSCoW releases.</li><li>An interactive prototype tested with 12 participants led to 6 scope changes, all traced through to 58 functional requirements, 48 user stories and 62 test cases.</li></ul>
+          <ul class="tags tags--pop"><li>BRD</li><li>SRS</li><li>User research</li><li>Use cases</li><li>UML</li><li>MoSCoW</li></ul>
+        </div>
+        <div class="card__media phones"><figure class="phone" style="--rot:-7deg"><div class="phone__screen"><img src="sigap_home.webp" width="560" height="1214" loading="lazy" decoding="async" alt="SIGAP elder home with the mascot, a press-and-speak button and four large 3D icon tiles"></div><figcaption>Elder home</figcaption></figure><figure class="phone phone--front"><div class="phone__screen"><img src="sigap_draft.webp" width="560" height="1214" loading="lazy" decoding="async" alt="SIGAP complaint screen with a photo of a damaged road and a draft filled in by the AI assistant"></div><figcaption>AI-drafted complaint</figcaption></figure><figure class="phone" style="--rot:7deg"><div class="phone__screen"><img src="sigap_family.webp" width="560" height="1214" loading="lazy" decoding="async" alt="SIGAP Family Companion view with the elder&#x27;s status, report timeline and next visit"></div><figcaption>Family view</figcaption></figure></div>
+      </div>
+    </article>
+
+    <article class="card cx4 flip" id="project-hampiness" data-roles="ba" aria-labelledby="p-hampiness-t">
+      <div class="card__head">
+        <span class="card__n" aria-hidden="true">04</span>
+        <div><p class="card__cat">Business Analysis Project</p><h3 class="card__t" id="p-hampiness-t">Hampiness</h3></div>
+        <div class="card__actions"><button class="live live--solid magnetic" type="button" data-cs="cs-hampiness">Case details <iconify-icon icon="tabler:layout-sidebar-right-expand" aria-hidden="true"></iconify-icon></button><a class="live magnetic" href="https://drive.google.com/drive/folders/1-IbuRQbOZ-6sRl4-dSbatcitgWl0ZcWG?usp=sharing" target="_blank" rel="noopener" data-live>Find project <iconify-icon icon="tabler:arrow-up-right" aria-hidden="true"></iconify-icon></a></div>
+      </div>
+      <div class="card__body">
+        <div class="card__text">
+          <p class="card__sub">Hamper ordering app that connects customers, vendors and an admin. Group project (4 members), Information Systems Analysis and Design lab.</p>
+          <p class="role">My role: <span>Business Analyst</span></p>
+          <ul class="bul"><li>I analyzed why the hamper ordering process was losing efficiency and customer satisfaction, grouping the root causes in two fishbone diagrams.</li><li>I mapped the data flow between customer, vendor and admin, and defined 8 use cases with full use case descriptions, including preconditions, postconditions and exceptions.</li><li>I modeled the structure and behavior with class, sequence, state transition and activity diagrams before the screens were designed.</li><li>The admin gets order trend and transaction activity reports to plan stock, promotions and features.</li></ul>
+          <ul class="tags tags--pop"><li>Fishbone</li><li>DFD</li><li>Use cases</li><li>Class diagram</li><li>Sequence diagram</li><li>UML</li></ul>
+        </div>
+        <div class="card__media phones"><figure class="phone" style="--rot:-7deg"><div class="phone__screen"><img src="hamp_home.webp" width="560" height="1214" loading="lazy" decoding="async" alt="Hampiness home with a serif headline, arch-framed hamper photos and delivery date chips"></div><figcaption>Browse hampers</figcaption></figure><figure class="phone phone--front"><div class="phone__screen"><img src="hamp_detail.webp" width="560" height="1214" loading="lazy" decoding="async" alt="Hampiness detail screen with a cookie tin photo, contents, delivery slot and quantity"></div><figcaption>Hamper detail</figcaption></figure><figure class="phone" style="--rot:7deg"><div class="phone__screen"><img src="hamp_track.webp" width="560" height="1214" loading="lazy" decoding="async" alt="Hampiness ticket-style order tracking with delivery progress, proof photo and rating"></div><figcaption>Order tracking</figcaption></figure></div>
+      </div>
+    </article>
+<article class="card cx1 c2" data-roles="ba po ux" id="project-02" aria-labelledby="p2-t">
+      <div class="card__head">
+        <span class="card__n" aria-hidden="true">05</span>
+        <div><p class="card__cat">Product &amp; Business Analysis Project</p><h3 class="card__t" id="p2-t">Tripiora</h3></div>
+        <div class="card__actions"><button class="live live--solid magnetic" type="button" data-cs="cs-tripiora">Case details <iconify-icon icon="tabler:layout-sidebar-right-expand" aria-hidden="true"></iconify-icon></button><a class="live magnetic" href="https://drive.google.com/drive/folders/10yq3_EKbZQ3RVPyailJNrsdkaiuPaQtf?usp=sharing" target="_blank" rel="noopener" data-live>Find project <iconify-icon icon="tabler:arrow-up-right" aria-hidden="true"></iconify-icon></a></div>
+      </div>
+      <div class="card__body">
+        <div class="card__text">
+          <p class="card__sub">Travel booking website, high-fidelity prototype in Figma. Group project (5 members).</p>
+          <p class="role">My role: <span>Business Analyst &amp; UX Designer</span></p>
+          <ul class="bul">
+            <li>I built Tripiora with my team, a travel booking website that helps people choose trips without scrolling through hundreds of packages and endless reviews.</li>
+            <li>Before designing anything, we mapped the business with a Business Model Canvas and SWOT analysis to make sure the idea could actually work.</li>
+            <li>We then designed a high-fidelity prototype of 20+ pages in Figma, from destination search to booking, payment, and trip history.</li>
+            <li>Key features: AI recommendations, review summaries through sentiment analysis, AI package comparison, split bill, and a chatbot that can search from a photo.</li>
+          </ul>
+          <ul class="tags tags--pop"><li>Figma</li><li>Business Model Canvas</li><li>SWOT</li></ul>
+        </div>
+        <div class="card__media laptops">
+          <figure class="laptop"><div class="laptop__screen"><img src="tripiora-landing.webp" width="828" height="482" loading="lazy" decoding="async" alt="Tripiora landing page with popular tour destinations for 2025"></div><div class="laptop__base" aria-hidden="true"></div><figcaption>Landing page</figcaption></figure>
+          <div class="mini-row">
+            <figure class="laptop laptop--sm"><div class="laptop__screen"><img src="tripiora-compare.webp" width="873" height="814" loading="lazy" decoding="async" alt="Tripiora booking comparison page with AI insights on two packages"></div><div class="laptop__base" aria-hidden="true"></div><figcaption>AI package comparison</figcaption></figure>
+            <figure class="laptop laptop--sm"><div class="laptop__screen"><img src="tripiora-chatbot.webp" width="1000" height="650" loading="lazy" decoding="async" alt="Tripiora AI chatbot recommending tour packages"></div><div class="laptop__base" aria-hidden="true"></div><figcaption>Trip AI chatbot</figcaption></figure>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card cx2 flip" id="project-dashboard" data-roles="da" aria-labelledby="p-dashboard-t">
+      <div class="card__head">
+        <span class="card__n" aria-hidden="true">06</span>
+        <div><p class="card__cat">Data Analytics Project</p><h3 class="card__t" id="p-dashboard-t">Economic Growth &amp; Welfare Dashboard</h3></div>
+        <div class="card__actions"><button class="live live--solid magnetic" type="button" data-cs="cs-dashboard">Case details <iconify-icon icon="tabler:layout-sidebar-right-expand" aria-hidden="true"></iconify-icon></button><a class="live magnetic" href="https://drive.google.com/drive/folders/19p6D780Nk7vtQjd6syjks8JJ-4GVqDLC?usp=sharing" target="_blank" rel="noopener" data-live>Find project <iconify-icon icon="tabler:arrow-up-right" aria-hidden="true"></iconify-icon></a></div>
+      </div>
+      <div class="card__body">
+        <div class="card__text">
+          <p class="card__sub">Interactive Looker Studio dashboard on economic growth, poverty, inequality and fiscal strength across the 34 provinces of Indonesia.</p>
+          <p class="role">My role: <span>Data Analyst</span></p>
+          <ul class="bul"><li>I built a one-page dashboard with filters for year, island or region, and province, so a reader can move from the national picture down to one province.</li><li>Four KPI cards give the headline: average GDP (PDRB) growth of 4.5%, average poverty rate of 10%, total regional budget (APBD) spending of Rp 6,398 T and an inclusive resilience score of 51.6 out of 100.</li><li>The charts show the Gini ratio trend by island, regional budget spending per capita split into capital and non-capital, a map of growth by province, a fiscal resilience segmentation and the link between GDP per capita and poverty.</li><li>The segmentation sorts the 34 provinces into 12 independent, 11 developing and 11 vulnerable ones.</li></ul>
+          <ul class="tags tags--pop"><li>Looker Studio</li><li>KPI design</li><li>Data storytelling</li><li>Economic indicators</li></ul>
+        </div>
+        <div class="card__media laptops"><figure class="laptop"><div class="laptop__screen"><img class="natural" src="dash_apbd.webp" width="1730" height="1532" loading="lazy" decoding="async" alt="Economic growth and welfare dashboard with KPI cards, Gini trend, budget chart, map, segmentation and scatter plot"></div><div class="laptop__base" aria-hidden="true"></div><figcaption>The full dashboard</figcaption></figure></div>
+      </div>
+    </article>
+<article class="card cx3 c3" data-roles="da" id="project-03" aria-labelledby="p3-t">
+      <div class="card__head">
+        <span class="card__n" aria-hidden="true">07</span>
+        <div><p class="card__cat">Data Analytics Project</p><h3 class="card__t" id="p3-t">Crime Analytics Dashboard</h3></div>
+        <div class="card__actions"><button class="live live--solid magnetic" type="button" data-cs="cs-crime">Case details <iconify-icon icon="tabler:layout-sidebar-right-expand" aria-hidden="true"></iconify-icon></button><a class="live magnetic" href="https://drive.google.com/drive/folders/1wXqepPJB3bHN3z03SBU2vpDhuMetxNta?usp=sharing" target="_blank" rel="noopener" data-live>Find project <iconify-icon icon="tabler:arrow-up-right" aria-hidden="true"></iconify-icon></a></div>
+      </div>
+      <div class="card__body">
+        <div class="card__text">
+          <p class="card__sub">Fully interactive Excel dashboard with slicers and pivot tables. Group project (5 members).</p>
+          <p class="role">My role: <span>Data Analyst</span></p>
+          <ul class="bul">
+            <li>I built an interactive crime dashboard in Excel with my team, so police teams can see case, arrest, and response-time trends at a glance.</li>
+            <li>We cleaned the raw data in Python first, then connected one fact table to four dimensions and a calendar table in a star schema, which keeps every number consistent.</li>
+            <li>Using Power Pivot, we wrote 13 DAX measures, such as arrest rate, solve rate, and average response time, and reused them across every chart.</li>
+            <li>Slicers for year, severity, crime category, and province let anyone re-filter the KPI cards, charts, and tables in one click.</li>
+          </ul>
+          <ul class="tags tags--pop"><li>Python</li><li>Excel</li><li>Power Query</li><li>Power Pivot</li><li>DAX</li></ul>
+        </div>
+        <div class="card__media laptops">
+          <figure class="laptop"><div class="laptop__screen"><img src="crime-dashboard.webp" width="1800" height="796" loading="lazy" decoding="async" alt="Crime Analytics Dashboard in Excel: filter panel, KPI cards (670 cases, 416 high severity, 544 arrests, 23.73% solved), charts by category, province and year" class="natural"></div><div class="laptop__base" aria-hidden="true"></div><figcaption>The full dashboard</figcaption></figure>
+          <div class="mini-row mini-row--crime">
+            <figure class="window"><span class="window__bar" aria-hidden="true"><i></i><i></i><i></i></span><img src="crime-powerpivot.webp" width="1400" height="1040" loading="lazy" decoding="async" alt="Power Pivot diagram view: Fact_CrimeReport linked to Calendar, Dim_Location, Dim_CrimeType, Dim_Officer and Dim_Victim, plus a My Measures table of DAX measures"><figcaption>Star schema in Power Pivot</figcaption></figure>
+            <figure class="window"><span class="window__bar" aria-hidden="true"><i></i><i></i><i></i></span><img src="crime-pivot.webp" width="1400" height="636" loading="lazy" decoding="async" alt="Pivot table sheet with a KPI scorecard (670 cases, 416 high severity, 544 arrests, 23.73% solve rate) and arrest rate by crime category"><figcaption>KPI scorecard &amp; pivot tables</figcaption></figure>
+          </div>
+        </div>
+      </div>
+    </article>
+<article class="card cx4 flip c4" data-roles="da" id="project-04" aria-labelledby="p4-t">
+      <div class="card__head">
+        <span class="card__n" aria-hidden="true">08</span>
+        <div><p class="card__cat">Data Analytics Project</p><h3 class="card__t" id="p4-t">Sales Analytics Dashboard</h3></div>
+        <div class="card__actions"><button class="live live--solid magnetic" type="button" data-cs="cs-sales">Case details <iconify-icon icon="tabler:layout-sidebar-right-expand" aria-hidden="true"></iconify-icon></button><a class="live magnetic" href="https://drive.google.com/drive/folders/1wsiPOPiBJLlEETjdJsOB5k5T616oi7Yl?usp=sharing" target="_blank" rel="noopener" data-live>Find project <iconify-icon icon="tabler:arrow-up-right" aria-hidden="true"></iconify-icon></a></div>
+      </div>
+      <div class="card__body">
+        <div class="card__text">
+          <p class="card__sub">Interactive Tableau dashboard with filters and filter actions, data cleaned in Python. Individual project.</p>
+          <ul class="bul">
+            <li>I built an interactive Tableau dashboard to find out where a global retailer was really making money, using 51,289 transactions across 147 countries.</li>
+            <li>I cleaned the data with Python and Power Query, then explored patterns with correlation, distribution, and trend charts.</li>
+            <li>The dashboard combines a map, heatmap, trend line, bar chart, and donut, with map filter actions, 4 global filters, and hover tooltips so users can dig into any market.</li>
+            <li>The result gives managers a quick overview and analysts room to explore, all on one page.</li>
+          </ul>
+          <ul class="tags tags--pop"><li>Python</li><li>Power Query</li><li>Tableau</li></ul>
+        </div>
+        <div class="card__media laptops">
+          <figure class="laptop"><div class="laptop__screen"><img src="sales-dashboard.webp" width="1200" height="768" loading="lazy" decoding="async" alt="SuperStore Sales Analytics Dashboard in Tableau with KPI strip, map, heatmap and trend line"></div><div class="laptop__base" aria-hidden="true"></div><figcaption>SuperStore sales dashboard</figcaption></figure>
+        </div>
+      </div>
+    </article>
+<article class="card cx1 c6" data-roles="ba" id="project-06" aria-labelledby="p6-t">
+      <div class="card__head">
+        <span class="card__n" aria-hidden="true">09</span>
+        <div><p class="card__cat">Business Case Project</p><h3 class="card__t" id="p6-t">B-Startion 2026</h3></div>
+        <div class="card__actions"><button class="live live--solid magnetic" type="button" data-cs="cs-bstartion">Case details <iconify-icon icon="tabler:layout-sidebar-right-expand" aria-hidden="true"></iconify-icon></button><a class="live magnetic" href="https://drive.google.com/drive/folders/1a4b-q0I5XZhKVV28cP1DGeeQvW-PNu3C?usp=sharing" target="_blank" rel="noopener" data-live>Find project <iconify-icon icon="tabler:arrow-up-right" aria-hidden="true"></iconify-icon></a></div>
+      </div>
+      <div class="card__body">
+        <div class="card__text">
+          <p class="card__sub">National business case competition by B-Preneur BINUS University. Team of 3 (Team CONQUERORS), semifinalist.</p>
+          <p class="role">My role: <span>Business Consultant &amp; Business Analyst</span></p>
+          <ul class="bul">
+            <li>I built a patient retention strategy with my team for a private hospital where only 14% of its 23,000 app users were actually active.</li>
+            <li>We dug into the problem with an issue tree and root cause analysis, then surveyed 87 patients and found that 62.1% had never been asked for feedback.</li>
+            <li>We created the CARE Engine, a 4-pillar strategy (Connect, Anticipate, Reach, Enrich), backed by SWOT/TOWS, competitor analysis, and a financial projection (91.25% ROI, 1.91-year payback).</li>
+            <li>Our team placed in the top 10 out of 90 teams nationally.</li>
+          </ul>
+          <ul class="tags tags--pop"><li>Issue tree</li><li>Root cause analysis</li><li>SWOT/TOWS</li><li>Financial projection</li></ul>
+        </div>
+        <div class="card__media pages">
+          <figure class="page" style="--rot:-6deg"><img src="bstartion-cover.webp" width="900" height="1101" loading="lazy" decoding="async" alt="Semifinal report cover: CARE That Remembers You"><figcaption>Our CARE proposal</figcaption></figure>
+          <figure class="page page--front"><img src="bstartion-solution.webp" width="900" height="1272" loading="lazy" decoding="async" alt="CARE solution page: connect the record every door can read"><figcaption>The solution</figcaption></figure>
+          <figure class="page" style="--rot:6deg"><img src="bstartion-app.webp" width="900" height="1272" loading="lazy" decoding="async" alt="Appendix page with the patient app UI mockups"><figcaption>App mockups</figcaption></figure>
+        </div>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- ================= CERTIFICATES (sky) ================= -->
+<section class="section sky sky--soft" id="certificates" data-nav="certificates" aria-labelledby="cert-h">
+  <iconify-icon class="doodle d-medal" icon="tabler:award" data-speed="-50" aria-hidden="true"></iconify-icon>
+  <div class="wrap">
+    <h2 class="title split" id="cert-h">Certificates &amp; <span class="hl hl--lilac">awards</span></h2>
+    <ul class="certs">
+      <li class="reveal" style="--rot:-2deg"><button class="cert" type="button" data-title="SIS Excellence Awards 2026" data-src="cert-excellence.webp" data-w="1290" data-h="899" data-alt="Certificate of Appreciation, SIS Excellence Awards, 10 June 2026">
+        <span class="cert__img"><img src="cert-excellence.webp" width="1290" height="899" loading="lazy" decoding="async" alt=""></span>
+        <span class="cert__meta">School of Information Systems, BINUS · Jun 10, 2026</span>
+        <span class="cert__t">SIS Excellence Awards 2026</span>
+        <span class="cert__why">Given to the top 5% of Information Systems students for academic and non-academic achievement. I kept a 4.00 GPA while teaching, mentoring, and leading at AIESEC.</span>
+      </button></li>
+      <li class="reveal" style="--rot:1.5deg"><button class="cert" type="button" data-title="Dean’s List 2025" data-src="cert-deans-list.webp" data-w="1600" data-h="1132" data-alt="Dean’s List Certificate 2025">
+        <span class="cert__img"><img src="cert-deans-list.webp" width="1600" height="1132" loading="lazy" decoding="async" alt=""></span>
+        <span class="cert__meta">School of Information Systems, BINUS · Dec 31, 2025</span>
+        <span class="cert__t">Dean’s List 2025</span>
+        <span class="cert__why">For the top 25% of students with a GPA of at least 3.50 and no repeated courses. I qualified with a 4.00 GPA.</span>
+      </button></li>
+      <li class="reveal" style="--rot:-1deg"><button class="cert" type="button" data-title="Dedicated Assistant" data-src="cert-dedicated.webp" data-w="1290" data-h="899" data-alt="Asisten Berdedikasi certificate, Even Semester 2025/2026">
+        <span class="cert__img"><img src="cert-dedicated.webp" width="1290" height="899" loading="lazy" decoding="async" alt=""></span>
+        <span class="cert__meta">IS Laboratory, BINUS · Even Semester 2025/2026</span>
+        <span class="cert__t">Dedicated Assistant (Asisten Berdedikasi)</span>
+        <span class="cert__why">For my commitment as a lab assistant, teaching Database Fundamentals with Oracle APEX to about 60 students across 2 classes.</span>
+      </button></li>
+      <li class="reveal" style="--rot:2deg"><button class="cert" type="button" data-title="Applied Database Systems using Oracle AI Database" data-src="cert-oracle.webp" data-w="1600" data-h="1237" data-alt="Oracle Academy Award of Completion, 24 June 2026">
+        <span class="cert__img"><img src="cert-oracle.webp" width="1600" height="1237" loading="lazy" decoding="async" alt=""></span>
+        <span class="cert__meta">Oracle Academy · Jun 24, 2026</span>
+        <span class="cert__t">Applied Database Systems using Oracle AI Database</span>
+        <span class="cert__why">I completed all coursework in data modeling, Oracle Cloud Infrastructure, and Oracle APEX.</span>
+      </button></li>
+      <li class="reveal" style="--rot:-1.5deg"><button class="cert" type="button" data-title="SASC Mentoring, Certificate of Excellent Achievement" data-src="cert-mentor.webp" data-w="1200" data-h="849" data-alt="SASC Mentoring Program Certificate of Achievement, Odd Period 2025/2026">
+        <span class="cert__img"><img src="cert-mentor.webp" width="1200" height="849" loading="lazy" decoding="async" alt=""></span>
+        <span class="cert__meta">SASC, BINUS · Odd Period 2025/2026</span>
+        <span class="cert__t">Scholarship Mentor, Excellent Achievement</span>
+        <span class="cert__why">For guiding 3 scholarship students to academic excellence during my first term as a Scholarship Mentor.</span>
+      </button></li>
+      <li class="reveal" style="--rot:1deg"><button class="cert" type="button" data-title="Consulting Bootcamp 2026" data-src="cert-180dc.webp" data-w="1600" data-h="1131" data-alt="Certificate of participation, Consulting Bootcamp 2026, 180 Degrees Consulting Universitas Brawijaya">
+        <span class="cert__img"><img src="cert-180dc.webp" width="1600" height="1131" loading="lazy" decoding="async" alt=""></span>
+        <span class="cert__meta">180 Degrees Consulting Universitas Brawijaya · 2026</span>
+        <span class="cert__t">Consulting Bootcamp 2026</span>
+        <span class="cert__why">I joined this bootcamp to learn the skills behind a Business Case Competition: building a financial projection, a Gantt chart implementation timeline, and a feasibility analysis, plus the other analysis steps a business case needs.</span>
+      </button></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ================= CONTACT (navy) ================= -->
+<section class="contact navy" id="contact" data-nav="contact" aria-labelledby="contact-h">
+  <div class="wrap contact__grid">
+    <div class="reveal">
+      <p class="contact__kicker">Contact me</p>
+      <h2 class="contact__h split" id="contact-h">Let’s build something <span class="grad">data-driven</span> together.</h2>
+      <p class="contact__lede">Open to internships and opportunities in Business Analysis, Systems Analysis, Data Analysis, and Business Intelligence.</p>
+    </div>
+    <ul class="contact__list reveal">
+      <li><iconify-icon icon="logos:whatsapp-icon" aria-hidden="true"></iconify-icon><span>WhatsApp</span><a href="https://wa.me/6281219510006" target="_blank" rel="noopener">+62 812 1951 0006</a></li>
+      <li><iconify-icon icon="vscode-icons:file-type-outlook" aria-hidden="true"></iconify-icon><span>Email</span><a href="mailto:albert.tandijono@binus.ac.id">albert.tandijono@binus.ac.id</a></li>
+      <li><iconify-icon icon="logos:linkedin-icon" aria-hidden="true"></iconify-icon><span>LinkedIn</span><a href="https://www.linkedin.com/in/albert-tandijono-737b6b276/" target="_blank" rel="noopener">Albert Tandijono</a></li>
+      <li><iconify-icon icon="simple-icons:line" aria-hidden="true"></iconify-icon><span>LINE</span><a href="https://line.me/ti/p/~trebla_256" target="_blank" rel="noopener">@trebla_256</a></li>
+      <li><iconify-icon icon="logos:google-maps" aria-hidden="true"></iconify-icon><span>Location</span><b>Jakarta, Indonesia</b></li>
+    </ul>
+  </div>
+
+  <div class="wrap">
+    <a class="cta-card magnetic-soft" href="mailto:albert.tandijono@binus.ac.id">
+      <span class="cta-card__ring" aria-hidden="true">
+        <svg viewBox="0 0 120 120"><defs><path id="ring" d="M60,60 m-46,0 a46,46 0 1,1 92,0 a46,46 0 1,1 -92,0"/></defs><text textLength="287" lengthAdjust="spacing"><textPath href="#ring" textLength="287" lengthAdjust="spacing">SAY HI ✦ LET'S TALK ✦ SAY HI ✦ LET'S TALK ✦ </textPath></text></svg>
+        <iconify-icon icon="tabler:arrow-up-right"></iconify-icon>
+      </span>
+      <span class="cta-card__txt">Contact Me!</span>
+      <span class="cta-card__sub">albert.tandijono@binus.ac.id</span>
+    </a>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap foot__in">
+    <p>&copy; 2026 Albert Tandijono. Built with a lot of SQL energy.</p>
+    <a href="#top">Back to top <iconify-icon icon="tabler:arrow-up" aria-hidden="true"></iconify-icon></a>
+  </div>
+</footer>
+
+<dialog class="lb" id="lightbox" aria-label="Certificate viewer">
+  <div class="lb__bar"><p class="lb__title" id="lb-title"></p><button class="lb__close" type="button">Close</button></div>
+  <div class="lb__stage"><img class="lb__img" id="lb-img" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt=""></div>
+</dialog>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- CASE-STUDIES:START -->
+<dialog class="cs" id="cs-printin" aria-labelledby="cs-printin-t">
+  <div class="cs__bar"><span class="cs__kick">Business Analysis Project</span><button class="cs__close" type="button">Close <iconify-icon icon="tabler:x" aria-hidden="true"></iconify-icon></button></div>
+  <div class="cs__scroll">
+    <header class="cs__head">
+      <h3 id="cs-printin-t">PrintIN</h3>
+      <p class="cs__lede">A mobile app that lets customers find printing vendors, customize prints and order in one place. I analyzed the business problem and turned it into requirements and system models before any screen was designed.</p>
+      <p class="role">My role: <span>Business Analyst</span></p>
+    </header>
+    <dl class="cs__facts"><div><dt>actors</dt><dd>3</dd></div><div><dt>use cases</dt><dd>8</dd></div><div><dt>root-cause areas</dt><dd>6</dd></div><div><dt>digital printing CAGR, Indonesia</dt><dd>10.4%</dd></div></dl>
+    <section class="cs__sec"><h4>Output</h4><p class="cs__note">Key screens from the Figma prototype: home, vendors near me, and the print customization form.</p><div class="shots shots--phone"><figure class="phone"><div class="phone__screen"><img src="printin-home.webp" width="430" height="932" loading="lazy" decoding="async" alt="PrintIN Home screen with wallet, new products and service shortcuts"></div><figcaption>Home</figcaption></figure><figure class="phone"><div class="phone__screen"><img src="printin-nearme.webp" width="430" height="932" loading="lazy" decoding="async" alt="PrintIN Near Me screen listing nearby printing vendors"></div><figcaption>Vendors near me</figcaption></figure><figure class="phone"><div class="phone__screen"><img src="printin-custom.webp" width="430" height="932" loading="lazy" decoding="async" alt="PrintIN customization form for size, paper color, paper type and finishing"></div><figcaption>Customize print</figcaption></figure></div></section>
+    <section class="cs__sec"><h4>What I did</h4><ol class="steps"><li><b>Find the root causes</b><span>Mapped how ordering a print works today and grouped the pain points (information, communication, ordering, cost, delivery, technology) in a root cause analysis.</span></li><li><b>Define the gap</b><span>Wrote the new business process narrative and compared the process before and after PrintIN. Checked market growth to confirm the idea is sustainable.</span></li><li><b>Map the data flow</b><span>Drew a context data flow diagram showing what the customer, the print vendor and the courier exchange with the system.</span></li><li><b>Write the requirements</b><span>Turned the needs into a use case diagram (3 actors, 8 use cases) and fully developed use case descriptions.</span></li><li><b>Model structure and behavior</b><span>Designed the class diagram, then tested the ordering logic with a sequence diagram and an activity diagram for Place Order.</span></li><li><b>Hand over to design</b><span>Defined the client/server architecture and passed the requirements to UI design in Figma.</span></li></ol></section>
+    <section class="cs__sec"><h4>Key diagrams and analysis</h4><p class="cs__note">Tap a diagram to enlarge it.</p><div class="dgs"><figure class="dg dg--wide"><button type="button" class="dg__b" data-cert-open data-src="printin_fishbone.webp" data-w="2035" data-h="1056" data-title="Root cause analysis (fishbone)" data-alt="Root cause analysis in six areas: information, communication, ordering process, cost, delivery and technology"><img src="printin_fishbone.webp" width="2035" height="1056" loading="lazy" decoding="async" alt="Root cause analysis in six areas: information, communication, ordering process, cost, delivery and technology"></button><figcaption>Root cause analysis (fishbone)</figcaption></figure><figure class="dg"><button type="button" class="dg__b" data-cert-open data-src="printin_dfd0.webp" data-w="1088" data-h="773" data-title="Context data flow diagram" data-alt="Context data flow diagram between Customer, Vendor, Courier and the order fulfillment system"><img src="printin_dfd0.webp" width="1088" height="773" loading="lazy" decoding="async" alt="Context data flow diagram between Customer, Vendor, Courier and the order fulfillment system"></button><figcaption>Context data flow diagram</figcaption></figure><figure class="dg"><button type="button" class="dg__b" data-cert-open data-src="printin_usecase.webp" data-w="2012" data-h="2066" data-title="Use case diagram" data-alt="Use case diagram with Customer, Print Vendor and Courier actors and eight use cases"><img src="printin_usecase.webp" width="2012" height="2066" loading="lazy" decoding="async" alt="Use case diagram with Customer, Print Vendor and Courier actors and eight use cases"></button><figcaption>Use case diagram</figcaption></figure><figure class="dg dg--wide"><button type="button" class="dg__b" data-cert-open data-src="printin_activity.webp" data-w="2046" data-h="1153" data-title="Activity diagram: Place Order" data-alt="Activity diagram of the Place Order flow from choosing a print category to saving the order form"><img src="printin_activity.webp" width="2046" height="1153" loading="lazy" decoding="async" alt="Activity diagram of the Place Order flow from choosing a print category to saving the order form"></button><figcaption>Activity diagram: Place Order</figcaption></figure><figure class="dg"><button type="button" class="dg__b" data-cert-open data-src="printin_seq.webp" data-w="1082" data-h="1973" data-title="Sequence diagram: Place Order" data-alt="Sequence diagram of the Place Order interaction between Customer and the system"><img src="printin_seq.webp" width="1082" height="1973" loading="lazy" decoding="async" alt="Sequence diagram of the Place Order interaction between Customer and the system"></button><figcaption>Sequence diagram: Place Order</figcaption></figure><figure class="dg dg--wide"><button type="button" class="dg__b" data-cert-open data-src="printin_class.webp" data-w="2080" data-h="1098" data-title="Class diagram" data-alt="Class diagram with Customer, Order, OrderDetail, Product, Vendor, Delivery, Courier and product subtypes"><img src="printin_class.webp" width="2080" height="1098" loading="lazy" decoding="async" alt="Class diagram with Customer, Order, OrderDetail, Product, Vendor, Delivery, Courier and product subtypes"></button><figcaption>Class diagram</figcaption></figure></div></section>
+  </div>
+</dialog>
+<dialog class="cs" id="cs-montirin" aria-labelledby="cs-montirin-t">
+  <div class="cs__bar"><span class="cs__kick">Business Analysis &amp; Product Project</span><button class="cs__close" type="button">Close <iconify-icon icon="tabler:x" aria-hidden="true"></iconify-icon></button></div>
+  <div class="cs__scroll">
+    <header class="cs__head">
+      <h3 id="cs-montirin-t">MontirIn</h3>
+      <p class="cs__lede">A responsive web app that turns a paper-based workshop into a transparent, queue-driven operation: digital queue, itemized estimates with proof photos, down payments, live status and six AI helpers.</p>
+      <p class="role">My role: <span>Business Analyst &amp; Product Owner</span></p>
+    </header>
+    <dl class="cs__facts"><div><dt>use cases</dt><dd>23</dd></div><div><dt>user roles</dt><dd>5</dd></div><div><dt>AI features</dt><dd>6</dd></div><div><dt>IRR</dt><dd>15.6%</dd></div></dl>
+    <section class="cs__sec"><h4>Output</h4><p class="cs__note">Screens from the UI prototype for the key features: service status, estimate approval, down payment, invoice, review and the mechanic's AI diagnosis.</p><div class="shots shots--phone"><figure class="phone"><div class="phone__screen"><img src="montirin_beranda.webp" width="560" height="1216" loading="lazy" decoding="async" alt="MontirIn customer home with active service card"></div><figcaption>Customer home</figcaption></figure><figure class="phone"><div class="phone__screen"><img src="montirin_status.webp" width="560" height="1216" loading="lazy" decoding="async" alt="MontirIn service status screen with progress steps"></div><figcaption>Live service status</figcaption></figure><figure class="phone"><div class="phone__screen"><img src="montirin_estimasi.webp" width="560" height="1216" loading="lazy" decoding="async" alt="MontirIn estimate approval screen"></div><figcaption>Approve estimate</figcaption></figure><figure class="phone"><div class="phone__screen"><img src="montirin_bayar_dp.webp" width="560" height="1216" loading="lazy" decoding="async" alt="MontirIn down payment screen"></div><figcaption>Pay down payment</figcaption></figure><figure class="phone"><div class="phone__screen"><img src="montirin_saran_ai.webp" width="560" height="1216" loading="lazy" decoding="async" alt="MontirIn AI suggestion screen"></div><figcaption>AI suggestion</figcaption></figure></div></section>
+    <section class="cs__sec"><h4>What I did</h4><ol class="steps"><li><b>Understand the current process</b><span>Interviewed the owner and documented how the garage works today.</span></li><li><b>Find problems and opportunities</b><span>Grouped the pain points into 5 problem areas and turned each into an opportunity, including 6 AI features.</span></li><li><b>Define roles and the new process</b><span>Set 5 user roles and modeled the proposed process as an activity diagram.</span></li><li><b>Specify the requirements</b><span>Wrote 23 use cases with main flows across 10 modules.</span></li><li><b>Design the data</b><span>Designed a 17-entity data model with a data dictionary.</span></li><li><b>Prove it is worth building</b><span>Planned the project schedule and a 5-year financial projection with NPV, IRR, ROI and payback.</span></li></ol></section>
+    <section class="cs__sec"><h4>Key diagrams and analysis</h4><p class="cs__note">Tap a diagram to enlarge it.</p><div class="dgs"><figure class="dg"><button type="button" class="dg__b" data-cert-open data-src="mon_asis.webp" data-w="823" data-h="2048" data-title="Current process (activity diagram)" data-alt="Activity diagram of the current garage process with swimlanes for customer, mechanic and owner, and supplier"><img src="mon_asis.webp" width="823" height="2048" loading="lazy" decoding="async" alt="Activity diagram of the current garage process with swimlanes for customer, mechanic and owner, and supplier"></button><figcaption>Current process (activity diagram)</figcaption></figure><figure class="dg"><button type="button" class="dg__b" data-cert-open data-src="mon_tobe_a.webp" data-w="1136" data-h="2048" data-title="Proposed process (activity diagram)" data-alt="Activity diagram of the proposed MontirIn process across customer, admin, owner, mechanic, supplier and system"><img src="mon_tobe_a.webp" width="1136" height="2048" loading="lazy" decoding="async" alt="Activity diagram of the proposed MontirIn process across customer, admin, owner, mechanic, supplier and system"></button><figcaption>Proposed process (activity diagram)</figcaption></figure><figure class="dg"><button type="button" class="dg__b" data-cert-open data-src="mon_usecase.webp" data-w="617" data-h="2048" data-title="Use case diagram" data-alt="Use case diagram with customer, admin, owner, mechanic and supplier actors"><img src="mon_usecase.webp" width="617" height="2048" loading="lazy" decoding="async" alt="Use case diagram with customer, admin, owner, mechanic and supplier actors"></button><figcaption>Use case diagram</figcaption></figure><figure class="dg dg--wide"><button type="button" class="dg__b" data-cert-open data-src="mon_erd.webp" data-w="1992" data-h="2048" data-title="Entity relationship diagram" data-alt="Entity relationship diagram of the MontirIn data model"><img src="mon_erd.webp" width="1992" height="2048" loading="lazy" decoding="async" alt="Entity relationship diagram of the MontirIn data model"></button><figcaption>Entity relationship diagram</figcaption></figure><figure class="dg"><button type="button" class="dg__b" data-cert-open data-src="mon_feasibility.webp" data-w="1901" data-h="2048" data-title="Feasibility: NPV, IRR, ROI, BEP" data-alt="Financial feasibility analysis with NPV, profitability index, IRR, ROI and break-even"><img src="mon_feasibility.webp" width="1901" height="2048" loading="lazy" decoding="async" alt="Financial feasibility analysis with NPV, profitability index, IRR, ROI and break-even"></button><figcaption>Feasibility: NPV, IRR, ROI, BEP</figcaption></figure><figure class="dg dg--wide"><button type="button" class="dg__b" data-cert-open data-src="montirin_keuangan.webp" data-w="1400" data-h="855" data-title="Web: financial report (owner)" data-alt="MontirIn owner dashboard with the financial report"><img src="montirin_keuangan.webp" width="1400" height="855" loading="lazy" decoding="async" alt="MontirIn owner dashboard with the financial report"></button><figcaption>Web: financial report (owner)</figcaption></figure><figure class="dg dg--wide"><button type="button" class="dg__b" data-cert-open data-src="montirin_prediksi.webp" data-w="1400" data-h="855" data-title="Web: stock forecast" data-alt="MontirIn stock forecast page with chart and recommendations"><img src="montirin_prediksi.webp" width="1400" height="855" loading="lazy" decoding="async" alt="MontirIn stock forecast page with chart and recommendations"></button><figcaption>Web: stock forecast</figcaption></figure></div></section>
+  </div>
+</dialog>
+<dialog class="cs" id="cs-sigap" aria-labelledby="cs-sigap-t">
+  <div class="cs__bar"><span class="cs__kick">Business Analysis Project</span><button class="cs__close" type="button">Close <iconify-icon icon="tabler:x" aria-hidden="true"></iconify-icon></button></div>
+  <div class="cs__scroll">
+    <header class="cs__head">
+      <h3 id="cs-sigap-t">SIGAP: Voice-First Care Application for Elders</h3>
+      <p class="cs__lede">A voice-first app that connects elders, their families and the village Neighborhood head (RT). Elders speak, the AI drafts the complaint, and the RT head receives and resolves it with proof.</p>
+      <p class="role">My role: <span>Business Analyst</span></p>
+    </header>
+    <dl class="cs__facts"><div><dt>survey respondents</dt><dd>34</dd></div><div><dt>use cases</dt><dd>32</dd></div><div><dt>functional requirements</dt><dd>58</dd></div><div><dt>test cases</dt><dd>62</dd></div></dl>
+    <section class="cs__sec"><h4>Output</h4><p class="cs__note">Key screens: the voice-first elder home, the AI-drafted complaint to confirm, and the Family Companion view. Illustrations and photos come from the project's Figma file.</p><div class="shots shots--phone"><figure class="phone"><div class="phone__screen"><img src="sigap_home.webp" width="560" height="1214" loading="lazy" decoding="async" alt="SIGAP elder home with the mascot, a press-and-speak button and four large 3D icon tiles"></div><figcaption>Elder home</figcaption></figure><figure class="phone"><div class="phone__screen"><img src="sigap_draft.webp" width="560" height="1214" loading="lazy" decoding="async" alt="SIGAP complaint screen with a photo of a damaged road and a draft filled in by the AI assistant"></div><figcaption>AI-drafted complaint</figcaption></figure><figure class="phone"><div class="phone__screen"><img src="sigap_family.webp" width="560" height="1214" loading="lazy" decoding="async" alt="SIGAP Family Companion view with the elder&#x27;s status, report timeline and next visit"></div><figcaption>Family view</figcaption></figure></div></section>
+    <section class="cs__sec"><h4>What I did</h4><ol class="steps"><li><b>Research the problem</b><span>Surveyed families of elders and compared existing services such as LAPOR!, JAKI, Halodoc and Mobile JKN.</span></li><li><b>Find the root causes</b><span>Found there is no single channel, and that the barrier is the service flow, not app skills.</span></li><li><b>Map the process</b><span>Drew the As-Is process and redesigned it as the To-Be voice complaint flow.</span></li><li><b>Set objectives and scope</b><span>Defined 7 business objectives with indicators and targets, what is in and out of scope, and 3 releases by MoSCoW priority.</span></li><li><b>Write the requirements</b><span>Wrote 19 business requirements, 58 functional and 11 non-functional requirements, 16 business rules, 32 use cases and 48 user stories.</span></li><li><b>Model the system</b><span>Drew the context diagram, use case diagram, domain classes, a sequence diagram and a status state diagram.</span></li><li><b>Validate and trace</b><span>Tested the prototype with 12 participants, logged 6 scope changes and traced everything down to 62 test cases.</span></li></ol></section>
+    <section class="cs__sec"><h4>Key diagrams and analysis</h4><p class="cs__note">Tap a diagram to enlarge it.</p><div class="dgs"><figure class="dg dg--wide"><button type="button" class="dg__b" data-cert-open data-src="sg_asis.webp" data-w="2400" data-h="775" data-title="As-Is process" data-alt="Activity diagram with swimlanes of how elders report problems and get services today"><img src="sg_asis.webp" width="2400" height="775" loading="lazy" decoding="async" alt="Activity diagram with swimlanes of how elders report problems and get services today"></button><figcaption>As-Is process</figcaption></figure><figure class="dg dg--wide"><button type="button" class="dg__b" data-cert-open data-src="sg_tobe.webp" data-w="2400" data-h="717" data-title="To-Be process" data-alt="Activity diagram with swimlanes of the voice complaint from speaking to resolution"><img src="sg_tobe.webp" width="2400" height="717" loading="lazy" decoding="async" alt="Activity diagram with swimlanes of the voice complaint from speaking to resolution"></button><figcaption>To-Be process</figcaption></figure><figure class="dg dg--wide"><button type="button" class="dg__b" data-cert-open data-src="sg_context.webp" data-w="2400" data-h="1588" data-title="Context diagram" data-alt="Context data flow diagram of SIGAP with eight external entities"><img src="sg_context.webp" width="2400" height="1588" loading="lazy" decoding="async" alt="Context data flow diagram of SIGAP with eight external entities"></button><figcaption>Context diagram</figcaption></figure><figure class="dg"><button type="button" class="dg__b" data-cert-open data-src="sg_usecase.webp" data-w="2200" data-h="2444" data-title="Use case diagram" data-alt="Use case diagram with elder, family, RT head, village head and village admin actors"><img src="sg_usecase.webp" width="2200" height="2444" loading="lazy" decoding="async" alt="Use case diagram with elder, family, RT head, village head and village admin actors"></button><figcaption>Use case diagram</figcaption></figure><figure class="dg dg--wide"><button type="button" class="dg__b" data-cert-open data-src="sg_class.webp" data-w="2400" data-h="1376" data-title="Domain class diagram" data-alt="Domain class diagram with elder, complaint, booking, family link and related classes"><img src="sg_class.webp" width="2400" height="1376" loading="lazy" decoding="async" alt="Domain class diagram with elder, complaint, booking, family link and related classes"></button><figcaption>Domain class diagram</figcaption></figure><figure class="dg dg--wide"><button type="button" class="dg__b" data-cert-open data-src="sg_sequence.webp" data-w="2400" data-h="1440" data-title="Sequence diagram: voice complaint" data-alt="Sequence diagram of an elder filing a complaint by voice"><img src="sg_sequence.webp" width="2400" height="1440" loading="lazy" decoding="async" alt="Sequence diagram of an elder filing a complaint by voice"></button><figcaption>Sequence diagram: voice complaint</figcaption></figure><figure class="dg dg--wide"><button type="button" class="dg__b" data-cert-open data-src="sg_state.webp" data-w="2400" data-h="1034" data-title="State diagram: complaint status" data-alt="State diagram of a complaint from received to completed, with escalation and re-complaint"><img src="sg_state.webp" width="2400" height="1034" loading="lazy" decoding="async" alt="State diagram of a complaint from received to completed, with escalation and re-complaint"></button><figcaption>State diagram: complaint status</figcaption></figure></div></section>
+  </div>
+</dialog>
+<dialog class="cs" id="cs-hampiness" aria-labelledby="cs-hampiness-t">
+  <div class="cs__bar"><span class="cs__kick">Business Analysis Project</span><button class="cs__close" type="button">Close <iconify-icon icon="tabler:x" aria-hidden="true"></iconify-icon></button></div>
+  <div class="cs__scroll">
+    <header class="cs__head">
+      <h3 id="cs-hampiness-t">Hampiness</h3>
+      <p class="cs__lede">A hamper ordering app where customers browse and order, vendors manage products, packages and delivery proof, and the admin reads trend reports.</p>
+      <p class="role">My role: <span>Business Analyst</span></p>
+    </header>
+    <dl class="cs__facts"><div><dt>actors</dt><dd>3</dd></div><div><dt>use cases</dt><dd>8</dd></div><div><dt>root-cause analyses</dt><dd>2</dd></div><div><dt>classes</dt><dd>9</dd></div></dl>
+    <section class="cs__sec"><h4>Output</h4><p class="cs__note">Key screens redesigned for the portfolio: browsing hampers, a hamper detail with contents and delivery slot, and order tracking with a rating.</p><div class="shots shots--phone"><figure class="phone"><div class="phone__screen"><img src="hamp_home.webp" width="560" height="1214" loading="lazy" decoding="async" alt="Hampiness home with a serif headline, arch-framed hamper photos and delivery date chips"></div><figcaption>Browse hampers</figcaption></figure><figure class="phone"><div class="phone__screen"><img src="hamp_detail.webp" width="560" height="1214" loading="lazy" decoding="async" alt="Hampiness detail screen with a cookie tin photo, contents, delivery slot and quantity"></div><figcaption>Hamper detail</figcaption></figure><figure class="phone"><div class="phone__screen"><img src="hamp_track.webp" width="560" height="1214" loading="lazy" decoding="async" alt="Hampiness ticket-style order tracking with delivery progress, proof photo and rating"></div><figcaption>Order tracking</figcaption></figure></div></section>
+    <section class="cs__sec"><h4>What I did</h4><ol class="steps"><li><b>Find the root causes</b><span>Two fishbone diagrams on why operational effectiveness and customer satisfaction drop.</span></li><li><b>Map the data flow</b><span>Drew context and level 0 data flow diagrams for customer, vendor and admin.</span></li><li><b>Define the requirements</b><span>Wrote the use case diagram and 8 fully developed use case descriptions with exception handling.</span></li><li><b>Model structure</b><span>Designed the class diagram with orders, hampers, products, vendors, categories, delivery and review.</span></li><li><b>Model behavior</b><span>Described the flows with sequence, state transition and activity diagrams.</span></li><li><b>Specify inputs, outputs and architecture</b><span>Defined system inputs and outputs per user, and the client/server architecture.</span></li></ol></section>
+    <section class="cs__sec"><h4>Key diagrams and analysis</h4><p class="cs__note">Tap a diagram to enlarge it.</p><div class="dgs"><figure class="dg"><button type="button" class="dg__b" data-cert-open data-src="hamp_fishbone.webp" data-w="1944" data-h="2299" data-title="Fishbone diagram" data-alt="Two fishbone diagrams for dropping operational effectiveness and customer satisfaction"><img src="hamp_fishbone.webp" width="1944" height="2299" loading="lazy" decoding="async" alt="Two fishbone diagrams for dropping operational effectiveness and customer satisfaction"></button><figcaption>Fishbone diagram</figcaption></figure><figure class="dg"><button type="button" class="dg__b" data-cert-open data-src="hamp_dfd.webp" data-w="2005" data-h="1956" data-title="Context DFD" data-alt="Context data flow diagram of Hampiness"><img src="hamp_dfd.webp" width="2005" height="1956" loading="lazy" decoding="async" alt="Context data flow diagram of Hampiness"></button><figcaption>Context DFD</figcaption></figure><figure class="dg"><button type="button" class="dg__b" data-cert-open data-src="hamp_usecase.webp" data-w="1254" data-h="2086" data-title="Use case diagram" data-alt="Use case diagram with customer, vendor and admin"><img src="hamp_usecase.webp" width="1254" height="2086" loading="lazy" decoding="async" alt="Use case diagram with customer, vendor and admin"></button><figcaption>Use case diagram</figcaption></figure><figure class="dg dg--wide"><button type="button" class="dg__b" data-cert-open data-src="hamp_class.webp" data-w="2400" data-h="1811" data-title="Class diagram" data-alt="Class diagram of Hampiness"><img src="hamp_class.webp" width="2400" height="1811" loading="lazy" decoding="async" alt="Class diagram of Hampiness"></button><figcaption>Class diagram</figcaption></figure><figure class="dg"><button type="button" class="dg__b" data-cert-open data-src="hamp_seq1.webp" data-w="2021" data-h="2752" data-title="Sequence diagrams (1)" data-alt="Sequence diagrams for customer registration and ordering"><img src="hamp_seq1.webp" width="2021" height="2752" loading="lazy" decoding="async" alt="Sequence diagrams for customer registration and ordering"></button><figcaption>Sequence diagrams (1)</figcaption></figure></div></section>
+  </div>
+</dialog>
+<dialog class="cs" id="cs-tripiora" aria-labelledby="cs-tripiora-t">
+  <div class="cs__bar"><span class="cs__kick">Product &amp; Business Analysis Project</span><button class="cs__close" type="button">Close <iconify-icon icon="tabler:x" aria-hidden="true"></iconify-icon></button></div>
+  <div class="cs__scroll">
+    <header class="cs__head">
+      <h3 id="cs-tripiora-t">Tripiora</h3>
+      <p class="cs__lede">A travel booking website that fights decision fatigue: AI recommendations, review summaries, package comparison, split bill and a chatbot that can search from a photo.</p>
+      <p class="role">My role: <span>Business Analyst &amp; UX Designer</span></p>
+    </header>
+    <dl class="cs__facts"><div><dt>decision problems</dt><dd>4</dd></div><div><dt>AI and group features</dt><dd>6</dd></div><div><dt>prototype pages</dt><dd>20+</dd></div><div><dt>customer segments</dt><dd>5</dd></div></dl>
+    <section class="cs__sec"><h4>Output</h4><p class="cs__note">Key pages from the 20+ page Figma prototype.</p><div class="shots shots--wide"><figure class="wide"><img src="tripiora-landing.webp" width="828" height="482" loading="lazy" decoding="async" alt="Tripiora landing page with popular tour destinations"><figcaption>Landing page</figcaption></figure><figure class="wide"><img src="tripiora-compare.webp" width="873" height="814" loading="lazy" decoding="async" alt="Tripiora booking comparison page with AI insights on two packages"><figcaption>AI package comparison</figcaption></figure><figure class="wide"><img src="tripiora-chatbot.webp" width="1000" height="650" loading="lazy" decoding="async" alt="Tripiora AI chatbot recommending tour packages"><figcaption>Trip AI chatbot</figcaption></figure><figure class="wide"><img src="trip_ui_split.webp" width="2000" height="1125" loading="lazy" decoding="async" alt="Tripiora split bill page design"><figcaption>Split bill page</figcaption></figure></div></section>
+    <section class="cs__sec"><h4>What I did</h4><ol class="steps"><li><b>Frame the problem</b><span>Found that hundreds of packages, long reviews and manual comparison cause decision fatigue.</span></li><li><b>Define the value</b><span>Wrote the vision and six differentiators: Smart Preferences, AI sentiment review, AI package insights, package comparison, split bill and a multimodal chatbot.</span></li><li><b>Model the business</b><span>Built the Business Model Canvas with partners, segments, channels, costs and revenue streams.</span></li><li><b>Assess strengths and risks</b><span>Ran a SWOT analysis, including the cost of AI, dependence on vendor data and external APIs, and privacy.</span></li><li><b>Design the features</b><span>Described how each problem is solved: package insights, sentiment analysis, smart preferences and comparison.</span></li><li><b>Prototype in Figma</b><span>Designed 20+ high-fidelity pages, from login to profile.</span></li></ol></section>
+    <section class="cs__sec"><h4>Key diagrams and analysis</h4><p class="cs__note">Tap a diagram to enlarge it.</p><div class="dgs"><figure class="dg dg--wide"><button type="button" class="dg__b" data-cert-open data-src="trip_bmc.webp" data-w="2000" data-h="1125" data-title="Business Model Canvas" data-alt="Business Model Canvas for Tripiora"><img src="trip_bmc.webp" width="2000" height="1125" loading="lazy" decoding="async" alt="Business Model Canvas for Tripiora"></button><figcaption>Business Model Canvas</figcaption></figure><figure class="dg dg--wide"><button type="button" class="dg__b" data-cert-open data-src="trip_swot.webp" data-w="2000" data-h="1125" data-title="SWOT analysis" data-alt="SWOT analysis of Tripiora"><img src="trip_swot.webp" width="2000" height="1125" loading="lazy" decoding="async" alt="SWOT analysis of Tripiora"></button><figcaption>SWOT analysis</figcaption></figure></div></section>
+  </div>
+</dialog>
+<dialog class="cs" id="cs-dashboard" aria-labelledby="cs-dashboard-t">
+  <div class="cs__bar"><span class="cs__kick">Data Analytics Project</span><button class="cs__close" type="button">Close <iconify-icon icon="tabler:x" aria-hidden="true"></iconify-icon></button></div>
+  <div class="cs__scroll">
+    <header class="cs__head">
+      <h3 id="cs-dashboard-t">Economic Growth &amp; Welfare Dashboard</h3>
+      <p class="cs__lede">A dashboard that connects economic growth with the welfare of people: how fast regions grow, how many people are poor, how unequal income is, and how much room each regional government has to act.</p>
+      <p class="role">My role: <span>Data Analyst</span></p>
+    </header>
+    <dl class="cs__facts"><div><dt>avg. GDP growth</dt><dd>4.5%</dd></div><div><dt>avg. poverty rate</dt><dd>10%</dd></div><div><dt>regional budget spend</dt><dd>Rp 6,398 T</dd></div><div><dt>inclusive resilience score</dt><dd>51.6/100</dd></div></dl>
+    <section class="cs__sec"><h4>Output</h4><p class="cs__note">The full dashboard. Each part is explained below.</p><div class="shots shots--wide"><figure class="wide"><img src="dash_apbd.webp" width="1730" height="1532" loading="lazy" decoding="async" alt="Economic growth and welfare dashboard with KPI cards, Gini trend, budget chart, map, segmentation and scatter plot"><figcaption>The full dashboard</figcaption></figure></div></section>
+    <section class="cs__sec"><h4>What I did</h4><ol class="steps"><li><b>Start from the question</b><span>How does economic growth relate to the welfare of people across Indonesian regions?</span></li><li><b>Choose the KPIs</b><span>Picked four headline numbers: GDP growth, poverty rate, total regional budget spend and an inclusive resilience score that combines growth, poverty, spending and the Gini ratio.</span></li><li><b>Pick a chart for each question</b><span>Line chart for inequality over time, bar chart for how budgets are spent, map for where growth is, donut for fiscal strength, scatter plot for growth versus poverty.</span></li><li><b>Add filters</b><span>Year, island or region, and province filters let the reader slice every chart at once.</span></li><li><b>Read the story</b><span>Inequality (Gini) is highest in Java and lowest in Kalimantan and Sumatra, and most lines drift down from 2021 to 2025. Provinces with higher GDP per capita tend to have lower poverty, shown by the downward trend line.</span></li></ol></section>
+    
+  </div>
+</dialog>
+<dialog class="cs" id="cs-crime" aria-labelledby="cs-crime-t">
+  <div class="cs__bar"><span class="cs__kick">Data Analytics Project</span><button class="cs__close" type="button">Close <iconify-icon icon="tabler:x" aria-hidden="true"></iconify-icon></button></div>
+  <div class="cs__scroll">
+    <header class="cs__head">
+      <h3 id="cs-crime-t">Crime Analytics Dashboard</h3>
+      <p class="cs__lede">An interactive Excel dashboard that lets police teams see case, arrest and response-time trends at a glance, built on a star schema in Power Pivot and 13 DAX measures.</p>
+      <p class="role">My role: <span>Data Analyst</span></p>
+    </header>
+    <dl class="cs__facts"><div><dt>cases</dt><dd>670</dd></div><div><dt>arrests</dt><dd>544</dd></div><div><dt>solved</dt><dd>23.73%</dd></div><div><dt>DAX measures</dt><dd>13</dd></div></dl>
+    <section class="cs__sec"><h4>Output</h4><p class="cs__note">The finished dashboard, the Power Pivot data model, and the pivot sheet with the KPI scorecard.</p><div class="shots shots--wide"><figure class="wide"><img src="crime-dashboard.webp" width="1800" height="796" loading="lazy" decoding="async" alt="Crime Analytics Dashboard in Excel with filter panel, KPI cards, charts by category, province and year"><figcaption>The full dashboard</figcaption></figure><figure class="wide"><img src="crime-powerpivot.webp" width="1400" height="1040" loading="lazy" decoding="async" alt="Power Pivot diagram view with Fact_CrimeReport linked to four dimensions and a calendar table"><figcaption>Star schema in Power Pivot</figcaption></figure><figure class="wide"><img src="crime-pivot.webp" width="1400" height="636" loading="lazy" decoding="async" alt="Pivot table sheet with KPI scorecard and arrest rate by crime category"><figcaption>KPI scorecard and pivot tables</figcaption></figure></div></section>
+    <section class="cs__sec"><h4>What I did</h4><ol class="steps"><li><b>Design the data model</b><span>One fact table (200 report rows) linked to four dimensions (location, crime type, officer, victim, 100 rows each) in a star schema, so every pivot cell is filled and every number stays consistent.</span></li><li><b>Import and relate the data</b><span>Loaded the CSV files with Power Query, added them to the Data Model and linked each foreign key in Power Pivot as many-to-one.</span></li><li><b>Write the DAX measures</b><span>Wrote 13 measures such as total cases, arrests, victims, average response time, arrest rate, solve rate, high-severity cases and cases by senior officers.</span></li><li><b>Build the KPI scorecard</b><span>Four headline cards: total cases, high-severity cases, solved cases and average response time.</span></li><li><b>Build 8 pivot tables</b><span>Cases by crime category and severity, yearly trends, cases by province, victim age and injury profile, victim income by category, response time by category, status by year, and yearly arrest effectiveness.</span></li><li><b>Add charts and slicers</b><span>Eight chart types on the pivot tables, plus 7 slicers (year, province, crime category, severity, case status, victim income, department) connected to every pivot.</span></li><li><b>Read the story</b><span>Only 23.73% of cases were solved even though many categories had arrest rates above 80%, and environmental crimes took the longest to respond to.</span></li></ol></section>
+    <section class="cs__sec"><h4>Key diagrams and analysis</h4><p class="cs__note">Tap a diagram to enlarge it.</p><div class="dgs"><figure class="dg dg--wide"><button type="button" class="dg__b" data-cert-open data-src="crime-powerpivot.webp" data-w="1400" data-h="1040" data-title="Data model (star schema)" data-alt="Power Pivot diagram view of the crime data model"><img src="crime-powerpivot.webp" width="1400" height="1040" loading="lazy" decoding="async" alt="Power Pivot diagram view of the crime data model"></button><figcaption>Data model (star schema)</figcaption></figure></div></section>
+  </div>
+</dialog>
+<dialog class="cs" id="cs-sales" aria-labelledby="cs-sales-t">
+  <div class="cs__bar"><span class="cs__kick">Data Analytics Project</span><button class="cs__close" type="button">Close <iconify-icon icon="tabler:x" aria-hidden="true"></iconify-icon></button></div>
+  <div class="cs__scroll">
+    <header class="cs__head">
+      <h3 id="cs-sales-t">Sales Analytics Dashboard</h3>
+      <p class="cs__lede">An interactive Tableau dashboard that shows where a global retailer really makes money, built from 51,289 transactions across 147 countries (2011 to 2014) and cleaned with Power Query and Python.</p>
+      <p class="role">My role: <span>Data Analyst</span></p>
+    </header>
+    <dl class="cs__facts"><div><dt>rows</dt><dd>51,289</dd></div><div><dt>countries</dt><dd>147</dd></div><div><dt>sales</dt><dd>$12.64M</dd></div><div><dt>margin</dt><dd>11.6%</dd></div></dl>
+    <section class="cs__sec"><h4>Output</h4><p class="cs__note">The final dashboard with five KPI cards, a map, heatmap, bar, line and donut charts, and four global filters.</p><div class="shots shots--wide"><figure class="wide"><img src="sales-dashboard.webp" width="1600" height="1024" loading="lazy" decoding="async" alt="SuperStore sales analytics dashboard in Tableau with KPI cards, map, heatmap, bar chart, line chart and donut"><figcaption>Final interactive dashboard</figcaption></figure></div></section>
+    <section class="cs__sec"><h4>What I did</h4><ol class="steps"><li><b>Choose and check the data</b><span>Used the Global Superstore dataset (25 columns) and checked missing values, duplicates, date formats, odd numbers, ship dates and category consistency.</span></li><li><b>Clean it</b><span>Removed unneeded columns, fixed data types, renamed columns and filtered invalid sales rows in Power Query, then verified in Python that no missing values or zero sales remained.</span></li><li><b>Explore</b><span>Built a correlation scatter (discount versus profit), a sales distribution by sub-category and a monthly sales and profit trend.</span></li><li><b>Design the dashboard</b><span>Five KPI cards (sales, profit, orders, average discount, average shipping cost) and five chart types: map, heatmap, bar, dual-axis line and donut.</span></li><li><b>Add interactivity</b><span>Four global filters (year, market, product category, customer segment), hover tooltips, and a map filter action: click a country and every chart drills into it.</span></li><li><b>Tell the story</b><span>Profit turns negative as discounts pass about 50%, some best-selling sub-categories such as Tables still lose money, and a healthy 11.6% average margin hides loss-making regions.</span></li></ol></section>
+    <section class="cs__sec"><h4>Key diagrams and analysis</h4><p class="cs__note">Tap a diagram to enlarge it.</p><div class="dgs"><figure class="dg dg--wide"><button type="button" class="dg__b" data-cert-open data-src="sales_prep.webp" data-w="2000" data-h="1125" data-title="Data preparation and cleaning" data-alt="Slide on data preparation and cleaning steps"><img src="sales_prep.webp" width="2000" height="1125" loading="lazy" decoding="async" alt="Slide on data preparation and cleaning steps"></button><figcaption>Data preparation and cleaning</figcaption></figure><figure class="dg dg--wide"><button type="button" class="dg__b" data-cert-open data-src="sales_map.webp" data-w="2000" data-h="1125" data-title="Geospatial map and drill-down" data-alt="Map of total sales by country used as a drill-down filter"><img src="sales_map.webp" width="2000" height="1125" loading="lazy" decoding="async" alt="Map of total sales by country used as a drill-down filter"></button><figcaption>Geospatial map and drill-down</figcaption></figure><figure class="dg dg--wide"><button type="button" class="dg__b" data-cert-open data-src="sales_heat.webp" data-w="2000" data-h="1125" data-title="Heatmap: profit margin" data-alt="Heatmap of profit margin by sub-category and region"><img src="sales_heat.webp" width="2000" height="1125" loading="lazy" decoding="async" alt="Heatmap of profit margin by sub-category and region"></button><figcaption>Heatmap: profit margin</figcaption></figure></div></section>
+  </div>
+</dialog>
+<dialog class="cs" id="cs-bstartion" aria-labelledby="cs-bstartion-t">
+  <div class="cs__bar"><span class="cs__kick">Business Case Project</span><button class="cs__close" type="button">Close <iconify-icon icon="tabler:x" aria-hidden="true"></iconify-icon></button></div>
+  <div class="cs__scroll">
+    <header class="cs__head">
+      <h3 id="cs-bstartion-t">B-Startion 2026</h3>
+      <p class="cs__lede">National business case competition by B-Preneur BINUS University. In the semifinal our team designed the CARE Engine for Mandaya Royal Hospital Puri, a strategy to bring patients back, and placed in the top 10 of 90 teams.</p>
+      <p class="role">My role: <span>Business Consultant &amp; Business Analyst</span></p>
+    </header>
+    <dl class="cs__facts"><div><dt>of 90 teams</dt><dd>Top 10</dd></div><div><dt>patients surveyed</dt><dd>87</dd></div><div><dt>ROI</dt><dd>91.25%</dd></div><div><dt>payback</dt><dd>1.91 yrs</dd></div></dl>
+    <section class="cs__sec"><h4>Output</h4><p class="cs__note">Pages from the semifinal proposal: the solution and the app mockups.</p><div class="shots shots--wide"><figure class="wide"><img src="bstartion-solution.webp" width="900" height="1272" loading="lazy" decoding="async" alt="CARE solution page on connecting the record every door can read"><figcaption>The solution</figcaption></figure><figure class="wide"><img src="bstartion-app.webp" width="900" height="1272" loading="lazy" decoding="async" alt="Appendix page with the patient app UI mockups"><figcaption>App mockups</figcaption></figure></div></section>
+    <section class="cs__sec"><h4>What I did</h4><ol class="steps"><li><b>Size the problem</b><span>Mandaya had 23,000 registered app users but only about 3,200 (14%) were active, and the NPS survey did not reach about 420 outpatients a day. Our own survey of 87 patients showed 62.1% were never asked for feedback.</span></li><li><b>Find the root causes</b><span>Built an issue tree that breaks the problem into four issues: the app is only used for appointments, patient experience is not measured, patient data is split across systems, and loyalty points are out of reach (about 42 million points, only 28 redemptions).</span></li><li><b>Design the CARE Engine</b><span>A 4-pillar solution: Connect (one patient identity), Anticipate (automatic points and risk-based follow-up), Reach (digital surveys), Enrich (health summaries and daily steps).</span></li><li><b>Plan the rollout</b><span>Four phases over twelve months in a Gantt chart, with Anticipate last because retention is a result, not a cause.</span></li><li><b>Prove the numbers</b><span>Five-year projection: Rp 29.85 billion net cash flow, 91.25% ROI and a 1.91-year payback. It turns slightly negative only if revenue is 40% lower and cost 20% higher than planned.</span></li><li><b>Manage the risk</b><span>Mapped four main risks on a risk matrix, each with a mitigation.</span></li></ol></section>
+    <section class="cs__sec"><h4>Key diagrams and analysis</h4><p class="cs__note">Tap a diagram to enlarge it.</p><div class="dgs"><figure class="dg dg--wide"><button type="button" class="dg__b" data-cert-open data-src="bsc_root.webp" data-w="1920" data-h="1080" data-title="Root cause analysis (issue tree)" data-alt="Issue tree breaking the retention problem into four issues, sub-causes and root causes"><img src="bsc_root.webp" width="1920" height="1080" loading="lazy" decoding="async" alt="Issue tree breaking the retention problem into four issues, sub-causes and root causes"></button><figcaption>Root cause analysis (issue tree)</figcaption></figure><figure class="dg"><button type="button" class="dg__b" data-cert-open data-src="bsc_pillar1.webp" data-w="1414" data-h="2000" data-title="Pillar 1: Connect" data-alt="Solution page for Connect: the record every door can read"><img src="bsc_pillar1.webp" width="1414" height="2000" loading="lazy" decoding="async" alt="Solution page for Connect: the record every door can read"></button><figcaption>Pillar 1: Connect</figcaption></figure><figure class="dg"><button type="button" class="dg__b" data-cert-open data-src="bsc_pillar2.webp" data-w="1448" data-h="2048" data-title="Pillar 2: Anticipate" data-alt="Solution page for Anticipate: points and follow-up before the patient forgets"><img src="bsc_pillar2.webp" width="1448" height="2048" loading="lazy" decoding="async" alt="Solution page for Anticipate: points and follow-up before the patient forgets"></button><figcaption>Pillar 2: Anticipate</figcaption></figure><figure class="dg"><button type="button" class="dg__b" data-cert-open data-src="bsc_pillar3.webp" data-w="1448" data-h="2048" data-title="Pillar 3: Reach" data-alt="Solution page for Reach: surveys, feedback processing and NPS dashboard"><img src="bsc_pillar3.webp" width="1448" height="2048" loading="lazy" decoding="async" alt="Solution page for Reach: surveys, feedback processing and NPS dashboard"></button><figcaption>Pillar 3: Reach</figcaption></figure><figure class="dg"><button type="button" class="dg__b" data-cert-open data-src="bsc_pillar4.webp" data-w="1448" data-h="2048" data-title="Pillar 4: Enrich" data-alt="Solution page for Enrich: health summaries and daily steps program"><img src="bsc_pillar4.webp" width="1448" height="2048" loading="lazy" decoding="async" alt="Solution page for Enrich: health summaries and daily steps program"></button><figcaption>Pillar 4: Enrich</figcaption></figure><figure class="dg dg--wide"><button type="button" class="dg__b" data-cert-open data-src="bsc_fin_kpi.webp" data-w="1181" data-h="390" data-title="Financial projection: key takeaways" data-alt="Key takeaways of the financial projection with net cash flow, ROI, IRR and payback"><img src="bsc_fin_kpi.webp" width="1181" height="390" loading="lazy" decoding="async" alt="Key takeaways of the financial projection with net cash flow, ROI, IRR and payback"></button><figcaption>Financial projection: key takeaways</figcaption></figure><figure class="dg dg--wide"><button type="button" class="dg__b" data-cert-open data-src="bsc_fin_table.webp" data-w="2048" data-h="911" data-title="Financial projection (table)" data-alt="Five year financial projection table"><img src="bsc_fin_table.webp" width="2048" height="911" loading="lazy" decoding="async" alt="Five year financial projection table"></button><figcaption>Financial projection (table)</figcaption></figure><figure class="dg dg--wide"><button type="button" class="dg__b" data-cert-open data-src="bsc_gantt.webp" data-w="1336" data-h="1296" data-title="Gantt chart" data-alt="Implementation timeline of the CARE Engine across twelve months and four pillars"><img src="bsc_gantt.webp" width="1336" height="1296" loading="lazy" decoding="async" alt="Implementation timeline of the CARE Engine across twelve months and four pillars"></button><figcaption>Gantt chart</figcaption></figure></div></section>
+  </div>
+</dialog>
+<!-- CASE-STUDIES:END -->
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/iconify-icon@2.1.0/dist/iconify-icon.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="main.js" defer></script>
+<script type="module" src="hero3d.js"></script>
+</body>
+</html>
